@@ -29,8 +29,8 @@
         font-size: 1.4em;
         color: #999999; }
     .navbar #top-search-form .input-group-btn button#btn-search-small {
-      background: #2196f3;
-      border-color: #2196f3; }
+      background: #61c9a8;
+      border-color: #61c9a8; }
       .navbar #top-search-form .input-group-btn button#btn-search-small i {
         color: #fff; }
   .navbar #top-search-form.collapse.in, .navbar #top-search-form.collapsing {
@@ -51,12 +51,12 @@
   .navbar .navbar-toggle-search {
     padding: 6px 10px; }
   .navbar .navbar-toggle-search:hover, .navbar .navbar-toggle-search:focus, .navbar .navbar-toggle-menu:hover, .navbar .navbar-toggle-menu:focus {
-    border-color: #2196f3;
+    border-color: #ed9b40;
     background: #fff; }
     .navbar .navbar-toggle-search:hover i, .navbar .navbar-toggle-search:focus i, .navbar .navbar-toggle-menu:hover i, .navbar .navbar-toggle-menu:focus i {
-      color: #2196f3; }
+      color: #ed9b40; }
     .navbar .navbar-toggle-search:hover span, .navbar .navbar-toggle-search:focus span, .navbar .navbar-toggle-menu:hover span, .navbar .navbar-toggle-menu:focus span {
-      background-color: #2196f3 !important; }
+      background-color: #ed9b40 !important; }
   .navbar #nav-top-right-container.collapsing, .navbar #nav-top-right-container.in {
     padding-bottom: 10px;
     border-top: 0;
@@ -106,9 +106,9 @@
       .navbar .nav-top-container .login-top-container.authenticated i {
         display: inline-block !important;
         font-size: 1.3em;
-        color: #2196f3; }
+        color: #ed9b40; }
       .navbar .nav-top-container .login-top-container.authenticated span.caret {
-        color: #2196f3; }
+        color: #ed9b40; }
       .navbar .nav-top-container .login-top-container.authenticated a {
         text-decoration: none; }
       .navbar .nav-top-container .login-top-container.authenticated .user-menu i {
@@ -143,8 +143,8 @@
         font-size: 1.4em;
         color: #999999; }
     .navbar #top-search-form .input-group-btn button#btn-search-small {
-      background: #2196f3;
-      border-color: #2196f3; }
+      background: #61c9a8;
+      border-color: #61c9a8; }
       .navbar #top-search-form .input-group-btn button#btn-search-small i {
         color: #fff; }
   .nav-bottom-container {

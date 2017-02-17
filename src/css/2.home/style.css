@@ -69,7 +69,7 @@
       border-radius: 50%;
       padding: 4px 13px;
       font-size: .8em;
-      background-color: #2196f3; }
+      background-color: #61c9a8; }
   #latest-project-section .latest-project-item {
     max-width: 279.25px;
     display: block;
@@ -144,7 +144,7 @@
       font-size: 1.2em;
       display: block; }
   #home-popular-categories-section .popular-category-item img {
-    height: auto;
+    height: 360px;
     width: 100%; }
 
 #top-categories-section {
@@ -232,7 +232,7 @@
   color: #000;
   text-align: center; }
   #how-things-work-section .step-icon {
-    color: #2196f3;
+    color: #ed9b40;
     font-size: 8em; }
   #how-things-work-section .thumbnail {
     border: none;
@@ -347,7 +347,7 @@
     height: 435px; }
   #home-popular-categories-section .popular-category-item {
     float: left;
-    max-height: 480px; }
+    max-height: 360px; }
     #home-popular-categories-section .popular-category-item .popular-category-link {
       font-family: "SourceSansPro-Semibold";
       font-size: 3.5em; }
@@ -371,9 +371,9 @@
         left: 183px;
         right: 0px;
         width: 128px;
-        background-color: #2196f3 !important;
-        color: #2196f3 !important;
-        border: solid 1px #2196f3 !important; }
+        background-color: #ed9b40 !important;
+        color: #ed9b40 !important;
+        border: solid 1px #ed9b40 !important; }
       #how-things-work-section .thumbnail .line-two {
         left: 210px;
         width: 112px; }

@@ -11,6 +11,8 @@
             display: inline-block;
         } 
     }  */ }
+  .navbar .navbar-brand span {
+    line-height: 2.2em; }
   .navbar #form-search div.form-group:nth-child(2) input {
     width: 100%; }
   .navbar .navbar-toggle {
@@ -369,4 +371,4 @@
     margin-right: -50%;
     transform: translate(-50%, -50%); } }
 
-/*# sourceMappingURL=../../maps/1.base/nav.css.map */
+/*# sourceMappingURL=../../maps/1.base/navwithoutsearch.css.map */

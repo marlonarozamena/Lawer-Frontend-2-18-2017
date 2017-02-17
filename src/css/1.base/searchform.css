@@ -3,15 +3,15 @@
 
 .btn-search-style {
   border-radius: 0;
-  background: #2196f3;
+  background: #61c9a8;
   color: #fff;
-  border: 1px solid #2196f3; }
+  border: 1px solid #61c9a8; }
 
 .btn-search-style:hover {
   background: #fff !important;
-  border: 1px solid #2196f3 !important; }
+  border: 1px solid #61c9a8 !important; }
   .btn-search-style:hover i {
-    color: #2196f3 !important; }
+    color: #61c9a8 !important; }
 
 .search-criteria {
   border-radius: 0;
@@ -29,15 +29,15 @@
   font-size: 1.4em; }
 
 .group-btn button.btn-search-small {
-  background: #2196f3 !important;
-  border-color: #2196f3 !important; }
+  background: #61c9a8 !important;
+  border-color: #61c9a8 !important; }
   .group-btn button.btn-search-small i {
     color: #fff !important; }
 
 .group-btn button.btn-search-small:hover, .group-btn button.btn-search-small:focus {
   background: #fff !important;
-  border-color: #2196f3 !important; }
+  border-color: #61c9a8 !important; }
   .group-btn button.btn-search-small:hover i, .group-btn button.btn-search-small:focus i {
-    color: #2196f3; }
+    color: #61c9a8; }
 
 /*# sourceMappingURL=../../maps/1.base/searchform.css.map */

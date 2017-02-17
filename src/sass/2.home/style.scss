@@ -15,8 +15,7 @@ $section-padding-top:50px;
         }
     }
     $section-max-height:585px;   
-    margin-top:$section-padding-top;
-    //padding: 15px 0 0 0;
+    margin-top:$section-padding-top;   
     width: 100%;
     max-height:$section-max-height;
     overflow: hidden;
@@ -190,7 +189,7 @@ $section-padding-top:50px;
             }
         }
         img{
-            height: auto;
+            height: 360px;
             width: 100%;
         }
     }
@@ -493,7 +492,7 @@ $section-padding-top:50px;
     #home-popular-categories-section{
         .popular-category-item{
             float: left;
-            max-height: 480px;  
+            max-height: 360px;  
             .popular-category-link{             
                 font-family: "SourceSansPro-Semibold";
                 font-size: 3.5em;              

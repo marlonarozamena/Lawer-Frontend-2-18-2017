@@ -17,9 +17,9 @@ footer ul {
       display: none; }
     footer ul li .view-more {
       padding: 0;
-      color: #2196f3; }
+      color: #61c9a8; }
     footer ul li .view-more:hover {
-      color: #2196f3; }
+      color: #61c9a8; }
 
 footer .footer-top {
   border-bottom: 1px solid #757577;
@@ -49,19 +49,19 @@ footer .footer-down {
       font-size: 1.3em; }
   footer .footer-down .social-links .social-cf:hover {
     margin: 8px;
-    color: #2196f3; }
+    color: #61c9a8; }
   footer .footer-down .casafix-right {
     color: #dddddd; }
     footer .footer-down .casafix-right p {
       padding: 10px 0;
       margin: 0; }
     footer .footer-down .casafix-right a {
-      color: #2196f3; }
+      color: #61c9a8; }
       footer .footer-down .casafix-right a i {
         padding: 0 3px;
         color: #dddddd; }
     footer .footer-down .casafix-right a:hover {
-      color: #2196f3; }
+      color: #61c9a8; }
 
 @media (min-width: 768px) {
   footer .footer-top {

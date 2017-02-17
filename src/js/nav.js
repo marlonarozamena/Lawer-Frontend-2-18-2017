@@ -40,12 +40,12 @@ $(document).ready(function() {
     function moveNavbarMenuToBottom() {
         nav_bottom_menu.append(main_menu);
         nav_top_menu.find("#main-menu").remove();
-        $("#nav-top-right-container").addClass("next-to-search-form");        
+        $("#nav-top-right-container").addClass("next-to-search-form");
     }
     function moveNavbarMenuToTop() {
         nav_top_menu.append(main_menu);
         nav_bottom_menu.find("#main-menu").remove();
-        $("#nav-top-right-container").removeClass("next-to-search-form");    
+        $("#nav-top-right-container").removeClass("next-to-search-form");
     }
     function navbarTopPosition() {
 
