@@ -1,0 +1,55 @@
+@import "../1.base/colors.scss";
+@import "media.scss";
+.search-criteria,  .search-where, .input-group-btn button{
+    height: 39px;
+}
+.btn-search-style{
+    border-radius: 0;
+    background: $primary-button-background;    
+    color: $primary-button-color;
+    border: 1px solid $primary-button-background;    
+}
+.btn-search-style:hover{    
+    background: $inverse-primary-button-background!important; 
+    border: 1px solid $primary-button-background!important;    
+    i{
+        color: $inverse-primary-button-color!important;
+    }
+}
+.search-criteria{
+    border-radius: 0;    
+    min-width: 280px;         
+}
+.search-where{
+    min-width: 120px;
+}
+.input-group-btn{
+    button{
+        border-radius: 0;
+        i{
+            font-size: 1.4em;
+        }
+}
+    button{
+               
+        i{
+            font-size: 1.4em;
+        }
+}
+}
+.group-btn {
+        button.btn-search-small {
+            background: $primary-button-background!important;
+            border-color: $primary-button-background!important;
+            i{
+                color:$icon-white!important;
+            }
+        }
+        button.btn-search-small:hover, button.btn-search-small:focus {
+            background: $inverse-primary-button-background!important;
+            border-color: $inverse-primary-button-color!important;
+            i{
+                color:$inverse-primary-button-color;
+            }
+        }
+}

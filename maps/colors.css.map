@@ -1,0 +1,1 @@
+{"version":3,"file":"../sass/colors.css","sources":["colors.scss"],"sourcesContent":["$base:#eee;\r\n$header:#333;\r\n$icon-gray: rgba(119,119,119,0.73);\r\n$icon-white: #fff;\r\n$buttom-blue: #337ab7;"],"mappings":"","names":[]}

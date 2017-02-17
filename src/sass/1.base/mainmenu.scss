@@ -1,0 +1,175 @@
+@import "colors.scss";
+@import "media.scss";
+#main-menu{    
+    #mobile-nav-menu{
+        margin-bottom: 0;
+        .panel:last-child{
+            border:0!important;
+        }
+        .panel-heading{
+            a{
+                display: block;
+                span{
+                    margin-top: 3px;
+                    color: rgba(0, 0, 0, 0.71);    
+                    font-size: .8em;
+                }                
+            }
+        }
+        a{
+            color:$nav-text-color;
+        }
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                padding: 5px 10px;
+                font-size: .9em;
+                .submenu-head{
+                    font-size: 1em;
+                    color: $blue-nav-element; 
+                }
+            }
+        }
+    }
+    .nav-menu{
+        padding-left: 0;
+        margin:0;
+        background: $nav-menu-back-color;
+        font-size: 0;       
+        
+        .nav-menu-item{
+            font-size: 14px;
+            position: relative;
+            display: inline-block;
+            list-style-type: none;
+            padding: 19px 0 16px 0;
+            margin: 0!important;
+            background-color: $nav-menu-back-color;
+            a{
+                border: transparent 1px solid;
+                border-top: transparent 3px solid;
+                border-bottom: none;   
+                padding: 13px 25px;
+                margin:0;
+                color: $nav-text-color;
+                text-decoration: none;                
+            }                
+            .visible-others{
+                display: none;
+            }
+            .visible-xs{
+                display: inline;
+            }
+            a:hover{
+                border-top: $blue-nav-element 3px solid
+            }            
+        }
+        .nav-menu-item.active{
+            z-index: 1000;
+            a{
+                border: $nav-element-border-color 1px solid;
+                border-top: $blue-nav-element 3px solid;                
+                border-bottom: none;                                
+            }
+        }
+        .nav-menu-item-direct-link:hover{
+           
+            a{
+                border-right: transparent 1px solid!important;
+                border-left:transparent 1px solid!important;                                          
+            }
+        }
+    }
+   
+}
+@media (min-width: $screen-sm-min) {
+    .nav-menu{
+         .nav-menu-item{                 
+            .visible-others{
+                display: inline!important;
+            }
+            .visible-xs{
+                display: none!important;
+            }
+           
+         }
+    }
+     
+     .nav-submenu-container{
+        position: absolute;        
+        height: auto;        
+        left:0;
+        top: 49px;
+        width:100%;
+        background: $nav-menu-back-color;
+        border: solid 1px #ddd;        
+        padding: 15px 10px 10px 10px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+        .submenu-col{
+            border-right: #ddd 1px solid;   
+        }
+        .submenu-col:last-child{
+            border-right: 0;   
+        }
+        .submenu-services-link-all{
+            padding: 10px 20px;
+            a{
+                font-size: 1.1em;                
+                color: $blue-nav-element;
+            }
+        }
+        ul{            
+            float: left;
+            padding: 0 5px 0 5px;                   
+            
+            margin-bottom: 0;
+            .submenu-head{
+                color: $blue-nav-element;
+                font-size: 1.4em;                
+            }   
+
+            li{
+                
+                list-style-type: none;
+                padding: 5px 0;
+                a{color: $nav-text-color}                                        
+            }
+          }
+        
+       
+    }
+    #submenu-articles.nav-submenu-container{
+        left: 67px;
+        width: 90%;        
+     }
+         
+}
+@media (min-width: $screen-md-min) {
+     .nav-menu{
+         .nav-menu-item{
+           
+         }
+    }
+    .nav-submenu-container{       
+        padding: 15px 10px 10px 10px;
+       
+    }
+    #submenu-articles.nav-submenu-container{        
+        left: 340px;       
+        width: 65%;
+     }
+
+}
+@media (min-width: $screen-lg-min) {
+     .nav-menu{
+         .nav-menu-item{           
+           
+         }
+    }
+    #submenu-articles.nav-submenu-container{        
+        left: 410px;       
+        width: 65%;
+     }
+   
+}

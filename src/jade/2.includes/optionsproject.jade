@@ -1,0 +1,47 @@
+div(class="dropdown project-dropdown")
+    a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Project
+        span.caret
+    ul(class="dropdown-menu")
+        li
+            a(href="/projects")
+                i(class="fa fa-external-link-square")
+                |Go to @Resources.lblProjects
+        li(role="separator" class="divider")
+        li
+            a(href="/project/new")
+                i(class="fa fa-plus-square")
+                |@Resources.lblPostAProject
+        li(role="separator" class="divider")
+        li
+            a(href="@Url.Action('UserProjects', 'ClassifiedProject', new { id = User.Identity.GetUserId() })")
+                i(class="fa fa-suitcase")
+                |@Resources.lblMy @Resources.lblProjects        
+        //@if (User.Identity.GetPlan() == "2" || User.Identity.GetPlan() == "3")
+        //{
+        li(role="separator" class="divider")
+        li
+            a(href="@Url.Action('FollowingList', 'ClassifiedProject')")
+                i(class="fa fa-star")
+                |@Resources.lblWatching @Resources.lblProjects
+        //}
+div(class="dropdown user-dropdown")
+    a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+        i(class="fa fa-user")
+        |Denny
+        span.caret
+    ul(class="dropdown-menu")
+        li
+            a(href="@Url.Action('RegisterEdit', 'Account')")
+                i(class="fa fa-pencil")
+                |@Resources.lblProfile
+        li(role="separator" class="divider")
+        li
+            a(href="@Url.Action('Index', 'ClassifiedAsk')")
+                i(class="fa fa-comments")
+                |@Resources.lblClassifiedMessages
+                span(class="badge @hiddenClass ") @ViewData["countMessages"]
+        li(role="separator" class="divider")
+        li
+            a(href="@Url.Action('LogOff', 'Account')")
+                i(class="fa fa-sign-out")
+                |@Resources.lblLogout

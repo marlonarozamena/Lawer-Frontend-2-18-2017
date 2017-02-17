@@ -1,0 +1,248 @@
+
+<nav id="base-navbar" class="navbar navbar-default navbar-fixed-top navbar-menu-down">
+  <div class="container">
+    <div class="nav-top-container">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#nav-top-right-container" aria-expanded="false" class="navbar-toggle navbar-toggle-menu  collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <button type="button" data-toggle="collapse" data-target="#top-search-form" aria-expanded="false" class="navbar-toggle navbar-toggle-search collapsed"><span class="sr-only">Toggle Search Business Form </span><i class="fa fa-search"></i></button>
+        <div id="brand-container"><a href="#" class="navbar-brand"><img src="/Content/template/images/logos/casafix_lg.png" alt="Pro Working" class=" img-lg visible-lg hidden-md hidden-sm hidden-xs"/><img src="/Content/template/images/logos/casafix.png" alt="Pro Working" class="img-sm visible-xs visible-sm visible-md hidden-lg"/></a></div>
+      </div>
+      <div id="top-search-form" class="collapse navbar-collapse hidden-in-big">
+        <form name="search-for-item" action="/projects/search" role="search" method="get" class="form-inline navbar-search-project criteria">
+          <div class="form-group">
+            <label for="classified-search-criteria" class="sr-only"></label>
+            <div class="input-group"><span style="width:1%;" class="input-group-addon"><i class="fa fa-search"></i></span>
+              <input id="classified-search-criteria" name="q" type="text" placeholder="@Resources.lblSearch..." class="form-control"/>
+            </div>
+          </div>
+        </form>
+        <form name="search-location" role="search" class="form-inline navbar-search-project location">
+          <div class="form-group">
+            <div class="input-group"><span style="width:1%;" class="input-group-btn">
+                <button id="geo-location" type="button" onclick="javascript:detectLocation()" class="btn btn-default"><i class="fa fa-map-marker"></i></button><i id="loading-indicator" class="fa fa-refresh fa-spin fa-3x fa-fw"></i><span class="sr-only">@Resources.lblLoading...</span></span>
+              <input id="autocomplete-location" name="input_location" type="text" placeholder="@Resources.lblEnterALocation" value="@currentLocation" class="form-control"/><span style="width:1%;" class="input-group-btn">
+                <button id="search-submit-button" type="button" class="btn btn-default">Go!</button></span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="nav-top-right-container" class="collapse navbar-collapse pull-right">
+        <!--@if (User.Identity.IsAuthenticated)-->
+        <!--{-->
+        <div class="user-authenticated-options">
+          <div class="dropdown project-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Project<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/projects"><i class="fa fa-external-link-square"></i>Go to @Resources.lblProjects</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/project/new"><i class="fa fa-plus-square"></i>@Resources.lblPostAProject</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="@Url.Action('UserProjects', 'ClassifiedProject', new { id = User.Identity.GetUserId() })"><i class="fa fa-suitcase"></i>@Resources.lblMy @Resources.lblProjects        </a></li>
+              <!--@if (User.Identity.GetPlan() == "2" || User.Identity.GetPlan() == "3")-->
+              <!--{-->
+              <li role="separator" class="divider"></li>
+              <li><a href="@Url.Action('FollowingList', 'ClassifiedProject')"><i class="fa fa-star"></i>@Resources.lblWatching @Resources.lblProjects</a></li>
+              <!--}-->
+            </ul>
+          </div>
+          <div class="dropdown user-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-user"></i>Denny<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="@Url.Action('RegisterEdit', 'Account')"><i class="fa fa-pencil"></i>@Resources.lblProfile</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="@Url.Action('Index', 'ClassifiedAsk')"><i class="fa fa-comments"></i>@Resources.lblClassifiedMessages<span class="badge @hiddenClass ">@ViewData["countMessages"]</span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="@Url.Action('LogOff', 'Account')"><i class="fa fa-sign-out"></i>@Resources.lblLogout</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--}            -->
+        <div class="list-business-button-container"><a id="btn-search-small" href="/project/new" class="btn btn-primary navbar-buttom btn-sm">Post a Project</a></div>
+      </div>
+    </div>
+    <div class="nav-bottom-container hidden">
+      <div class="nav-bottom-center">
+        <div id="nav-bottom-menu" class="collapse navbar-collapse">
+          <div id="main-menu">
+            <div role="tablist" id="mobile-nav-menu" aria-multiselectable="true" class="mobile-nav-menu panel-group visible-xs hidden-md hidden-sm hidden-lg">       
+              <div class="panel">
+                <div role="tab" id="heading-mobile-menu-find-pros" class="panel-heading">               <a role="button" data-toggle="collapse" data-parent="#mobile-nav-menu" href="#mobile-menu-find-pros" aria-expanded="false" aria-controls="mobile-menu-find-pros" class="collapsed">
+                     
+                    Find Professionals<span class="open-or-close-icon pull-right glyphicon glyphicon-plus"></span></a></div>
+                <div id="mobile-menu-find-pros" role="tabpanel" aria-labelledby="heading-mobile-menu-find-pros" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul>
+                      <li><a href="#">Air Conditioning</a></li>
+                      <li> <a href="#">Audio, Video and Computers</a></li>
+                      <li> <a href="#">Awnings</a></li>
+                      <li> <a href="#">Cabinetry</a></li>
+                      <li> <a href="#">Carpentry</a></li>
+                      <li><a href="#">Cleaning Service</a></li>
+                      <li><a href="#">Concrete</a></li>
+                      <li> <a href="#">Decoration and Design            </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div role="tab" id="heading-mobile-menu-services" class="panel-heading">               <a role="button" data-toggle="collapse" data-parent="#mobile-nav-menu" href="#mobile-menu-services" aria-expanded="false" aria-controls="mobile-menu-services" class="collapsed">Services<span class="open-or-close-icon pull-right glyphicon glyphicon-plus"></span></a></div>
+                <div id="mobile-menu-services" role="tabpanel" aria-labelledby="heading-mobile-menu-services" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul>
+                      <li><a href="#">Air Conditioning</a></li>
+                      <li> <a href="#">Audio, Video and Computers</a></li>
+                      <li> <a href="#">Awnings</a></li>
+                      <li> <a href="#">Cabinetry</a></li>
+                      <li> <a href="#">Carpentry</a></li>
+                      <li> <a href="#">Cleaning Service</a></li>
+                      <li> <a href="#">Concrete</a></li>
+                      <li> <a href="#">Decoration and Design       </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div role="tab" id="heading-mobile-menu-articles" class="panel-heading">               <a role="button" data-toggle="collapse" data-parent="#mobile-nav-menu" href="#mobile-menu-articles" aria-expanded="false" aria-controls="mobile-menu-articles" class="collapsed">Articles<span class="open-or-close-icon pull-right glyphicon glyphicon-plus"></span></a></div>
+                <div id="mobile-menu-articles" role="tabpanel" aria-labelledby="heading-mobile-menu-articles" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <ul>
+                      <li><a href="#">Air Conditioning</a></li>
+                      <li> <a href="#">Audio, Video and Computers</a></li>
+                      <li> <a href="#">Awnings</a></li>
+                      <li> <a href="#">Cabinetry</a></li>
+                      <li> <a href="#">Carpentry</a></li>
+                      <li> <a href="#">Cleaning Service</a></li>
+                      <li> <a href="#">Concrete</a></li>
+                      <li> <a href="#">Decoration and Design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading"><a href="#" data-submenu-href="#submenu-projects">Projects  </a></div>
+              </div>
+            </div>
+            <ul class="nav-menu hidden-xs visible-sm visible-md visible-lg">
+              <li id="menu-find-pros" class="nav-menu-item"><a href="#" data-submenu-href="#submenu-find-pros">Find Professionals            </a></li>
+              <li id="menu-services" class="nav-menu-item"><a href="#" data-submenu-href="#submenu-services">Services            </a></li>
+              <li id="menu-projects" class="nav-menu-item nav-menu-item-direct-link"><a href="#" data-submenu-href="#submenu-projects">Projects</a></li>
+              <li id="menu-articles" class="nav-menu-item nav-menu-item-direct-link"><a href="#" data-submenu-href="#submenu-articles">Articles</a></li>
+            </ul>
+            <div class="submenu-container">
+              <div id="submenu-find-pros" data-menu-href="#menu-find-pros" class="nav-submenu-container hidden">
+                <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">
+                  <ul class="top-menu-section">
+                    <li> <a href="#">Air Conditioning</a></li>
+                    <li> <a href="#">Audio, Video and Computers</a></li>
+                    <li> <a href="#">Awnings</a></li>
+                    <li> <a href="#">Cabinetry</a></li>
+                    <li> <a href="#">Carpentry</a></li>
+                    <li> <a href="#">Cleaning Service</a></li>
+                    <li> <a href="#">Concrete</a></li>
+                    <li> <a href="#">Decoration and Design</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">
+                  <ul class="top-menu-section">
+                    <li> <a href="#">Air Conditioning</a></li>
+                    <li> <a href="#">Audio, Video and Computers</a></li>
+                    <li> <a href="#">Awnings</a></li>
+                    <li> <a href="#">Cabinetry</a></li>
+                    <li> <a href="#">Carpentry</a></li>
+                    <li> <a href="#">Cleaning Service</a></li>
+                    <li> <a href="#">Concrete</a></li>
+                    <li> <a href="#">Decoration and Design                               </a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">
+                  <ul class="top-menu-section">
+                    <li> <a href="#">Air Conditioning</a></li>
+                    <li> <a href="#">Audio, Video and Computers</a></li>
+                    <li> <a href="#">Awnings</a></li>
+                    <li> <a href="#">Cabinetry</a></li>
+                    <li> <a href="#">Carpentry</a></li>
+                    <li> <a href="#">Electricity</a></li>
+                    <li> <a href="#">Fences, Bars, Welding</a></li>
+                    <li> <a href="#">Floor and Carpet</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">
+                  <ul class="top-menu-section">
+                    <li> <a href="#">Air Conditioning</a></li>
+                    <li> <a href="#">Audio, Video and Computers</a></li>
+                    <li> <a href="#">Awnings</a></li>
+                    <li> <a href="#">Cabinetry</a></li>
+                    <li> <a href="#">Carpentry                   </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="submenu-services" data-menu-href="#menu-services" class="nav-submenu-container hidden">
+                <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">  
+                  <ul class="top-menu-section">
+                    <li> <a href="#">Air Conditioning</a></li>
+                    <li> <a href="#">Audio, Video and Computers</a></li>
+                    <li> <a href="#">Awnings</a></li>
+                    <li> <a href="#">Cabinetry</a></li>
+                    <li> <a href="#">Carpentry                   </a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 submenu-col"> 
+                  <ul class="top-menu-section">
+                    <li> <a href="#">Air Conditioning</a></li>
+                    <li> <a href="#">Audio, Video and Computers</a></li>
+                    <li> <a href="#">Awnings</a></li>
+                    <li> <a href="#">Cabinetry</a></li>
+                    <li> <a href="#">Carpentry                   </a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 submenu-col"> 
+                  <ul class="top-menu-section">
+                    <li> <a href="#">Air Conditioning</a></li>
+                    <li> <a href="#">Audio, Video and Computers</a></li>
+                    <li> <a href="#">Awnings</a></li>
+                    <li> <a href="#">Cabinetry</a></li>
+                    <li> <a href="#">Carpentry</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 submenu-col"> 
+                  <ul>
+                    <li> <a href="#">Cleaning Service</a></li>
+                    <li> <a href="#">Concrete</a></li>
+                    <li> <a href="#">Decoration and Design</a></li>
+                    <li> <a href="#">Doors and Windows</a></li>
+                    <li> <a href="#">Electricity             </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="submenu-projects" data-menu-href="#menu-projects" class="nav-submenu-container hidden">
+                <ul class="top-menu-section">
+                  <li> <a href="#">Air Conditioning</a></li>
+                  <li> <a href="#">Audio, Video and Computers</a></li>
+                  <li> <a href="#">Awnings</a></li>
+                  <li> <a href="#">Cabinetry</a></li>
+                  <li> <a href="#">Carpentry</a></li>
+                </ul>
+              </div>
+              <div id="submenu-articles" data-menu-href="#menu-articles" class="nav-submenu-container hidden">
+                <ul class="top-menu-section">
+                  <li> <span class="submenu-head">Air Conditioning</span></li>
+                  <li> <a href="#">Air Conditioning</a></li>
+                  <li> <a href="#">Audio, Video and Computers</a></li>
+                  <li> <a href="#">Awnings</a></li>
+                  <li> <a href="#">Cabinetry</a></li>
+                  <li> <a href="#">Carpentry</a></li>
+                </ul>
+                <ul class="top-menu-section">
+                  <li> <span class="submenu-head">Air Conditioning</span></li>
+                  <li> <a href="#">Air Conditioning</a></li>
+                  <li> <a href="#">Audio, Video and Computers</a></li>
+                  <li> <a href="#">Awnings</a></li>
+                  <li> <a href="#">Cabinetry</a></li>
+                  <li> <a href="#">Carpentry</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

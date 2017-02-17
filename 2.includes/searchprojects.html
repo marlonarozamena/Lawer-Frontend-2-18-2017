@@ -1,0 +1,18 @@
+
+<form name="search-for-item" action="/projects/search" role="search" method="get" class="form-inline navbar-search-project criteria">
+  <div class="form-group">
+    <label for="classified-search-criteria" class="sr-only"></label>
+    <div class="input-group"><span style="width:1%;" class="input-group-addon"><i class="fa fa-search"></i></span>
+      <input id="classified-search-criteria" name="q" type="text" placeholder="@Resources.lblSearch..." class="form-control"/>
+    </div>
+  </div>
+</form>
+<form name="search-location" role="search" class="form-inline navbar-search-project location">
+  <div class="form-group">
+    <div class="input-group"><span style="width:1%;" class="input-group-btn">
+        <button id="geo-location" type="button" onclick="javascript:detectLocation()" class="btn btn-default"><i class="fa fa-map-marker"></i></button><i id="loading-indicator" class="fa fa-refresh fa-spin fa-3x fa-fw"></i><span class="sr-only">@Resources.lblLoading...</span></span>
+      <input id="autocomplete-location" name="input_location" type="text" placeholder="@Resources.lblEnterALocation" value="@currentLocation" class="form-control"/><span style="width:1%;" class="input-group-btn">
+        <button id="search-submit-button" type="button" class="btn btn-default">Go!</button></span>
+    </div>
+  </div>
+</form>

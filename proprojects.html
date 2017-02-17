@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CasaFix</title>
+    <link href="/src/components/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--link(href="/src/components/bootstrap/css/bootstrap.min.css", rel="stylesheet")-->
+    <link href="/src/components/fonts-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/src/css/1.base/base.css" rel="stylesheet">
+    <link href="/src/css/1.base/footer.css" rel="stylesheet">
+    <link href="/src/css/1.base/nav.css" rel="stylesheet">
+    <link href="/src/css/3.prooverview/proprojects.css" rel="stylesheet"><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->       
+  </head>
+  <body>
+    <!--nav with class navbar-menu-down  is for other pages different than Home.-->
+    <!--nav(class="navbar navbar-default navbar-fixed-top navbar-menu-down" id="base-navbar")-->
+    <!--nav with class navbar-menu-top is for Home page or other containing the search.-->
+    <nav id="base-navbar" class="navbar navbar-default navbar-fixed-top navbar-menu-top">
+      <div class="container">
+        <div class="nav-top-container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#nav-top-right-container" aria-expanded="false" class="navbar-toggle navbar-toggle-menu collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <button type="button" data-toggle="collapse" data-target="#top-search-form" aria-expanded="false" class="navbar-toggle navbar-toggle-search collapsed"><span class="sr-only">Toggle Search Business Form </span><i class="fa fa-search"></i></button>
+            <button type="button" data-toggle="collapse" data-target="#login-top" aria-expanded="false" class="navbar-toggle navbar-toggle-user collapsed"><span class="sr-only">Toggle User Options </span><i class="fa fa-user"></i><span class="caret"></span></button>
+            <div id="brand-container"><a href="#" class="navbar-brand"><img src="/Content/template/images/logos/casafix_lg.png" alt="Pro Working" class=" img-lg visible-lg hidden-md hidden-sm hidden-xs"><img src="/Content/template/images/logos/casafix.png" alt="Pro Working" class="img-sm visible-xs visible-sm visible-md hidden-lg"></a></div>
+          </div>
+          <div id="top-search-form" class="collapse navbar-collapse hidden-in-big">
+            <form class="form-inline">
+              <div class="form-group">
+                <label for="search-criteria" class="sr-only"></label>
+                <input type="text" name="search" placeholder="Search business, services, or keywords" class="form-control search-criteria">
+              </div>
+              <div class="form-group">
+                <div class="input-group">           <span class="input-group-btn">
+                    <button type="button" onclick="populateLocation()" class="btn btn-default"><i class="fa fa-map-marker">           </i></button></span>
+                  <input type="text" name="where" placeholder="ZipCode" class="form-control search-where"><span class="input-group-btn">
+                    <button type="submit" class="btn btn-default btn-search-style btn-search-small"><i class="fa fa-search"></i></button></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div id="login-top" class="collapse login-top-container navbar-right authenticated"><a href="/Account/Login"> 
+              <!--i(class="fa fa-user-circle-o")--><span>Login</span></a></div>
+          <div id="nav-top-right-container" class="collapse navbar-collapse pull-right">
+            <div id="nav-top-menu">              </div>
+            <div class="list-business-button-container">
+              <button type="button" class="btn btn-primary btn-business navbar-buttom-inverse btn-sm">List your business</button>
+              <button id="btn-search-small-project" type="button" class="btn btn-primary btn-project navbar-buttom-alternative btn-sm">Post a Project</button>
+            </div>
+          </div>
+        </div>
+        <div class="nav-bottom-container hidden">
+          <div class="nav-bottom-center">
+            <div id="nav-bottom-menu" class="collapse navbar-collapse">
+              <div id="main-menu">
+                <div role="tablist" id="mobile-nav-menu" aria-multiselectable="true" class="mobile-nav-menu panel-group visible-xs hidden-md hidden-sm hidden-lg">       
+                  <div class="panel">
+                    <div role="tab" id="heading-mobile-menu-find-pros" class="panel-heading">               <a role="button" data-toggle="collapse" data-parent="#mobile-nav-menu" href="#mobile-menu-find-pros" aria-expanded="false" aria-controls="mobile-menu-find-pros" class="collapsed">
+                         
+                        Find Professionals<span class="open-or-close-icon pull-right glyphicon glyphicon-plus"></span></a></div>
+                    <div id="mobile-menu-find-pros" role="tabpanel" aria-labelledby="heading-mobile-menu-find-pros" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <ul>
+                          <li><a href="#">Air Conditioning</a></li>
+                          <li> <a href="#">Audio, Video and Computers</a></li>
+                          <li> <a href="#">Awnings</a></li>
+                          <li> <a href="#">Cabinetry</a></li>
+                          <li> <a href="#">Carpentry</a></li>
+                          <li><a href="#">Cleaning Service</a></li>
+                          <li><a href="#">Concrete</a></li>
+                          <li> <a href="#">Decoration and Design            </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div role="tab" id="heading-mobile-menu-services" class="panel-heading">               <a role="button" data-toggle="collapse" data-parent="#mobile-nav-menu" href="#mobile-menu-services" aria-expanded="false" aria-controls="mobile-menu-services" class="collapsed">Services<span class="open-or-close-icon pull-right glyphicon glyphicon-plus"></span></a></div>
+                    <div id="mobile-menu-services" role="tabpanel" aria-labelledby="heading-mobile-menu-services" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <ul>
+                          <li><a href="#">Air Conditioning</a></li>
+                          <li> <a href="#">Audio, Video and Computers</a></li>
+                          <li> <a href="#">Awnings</a></li>
+                          <li> <a href="#">Cabinetry</a></li>
+                          <li> <a href="#">Carpentry</a></li>
+                          <li> <a href="#">Cleaning Service</a></li>
+                          <li> <a href="#">Concrete</a></li>
+                          <li> <a href="#">Decoration and Design       </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div role="tab" id="heading-mobile-menu-articles" class="panel-heading">               <a role="button" data-toggle="collapse" data-parent="#mobile-nav-menu" href="#mobile-menu-articles" aria-expanded="false" aria-controls="mobile-menu-articles" class="collapsed">Articles<span class="open-or-close-icon pull-right glyphicon glyphicon-plus"></span></a></div>
+                    <div id="mobile-menu-articles" role="tabpanel" aria-labelledby="heading-mobile-menu-articles" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <ul>
+                          <li><a href="#">Air Conditioning</a></li>
+                          <li> <a href="#">Audio, Video and Computers</a></li>
+                          <li> <a href="#">Awnings</a></li>
+                          <li> <a href="#">Cabinetry</a></li>
+                          <li> <a href="#">Carpentry</a></li>
+                          <li> <a href="#">Cleaning Service</a></li>
+                          <li> <a href="#">Concrete</a></li>
+                          <li> <a href="#">Decoration and Design</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel">
+                    <div class="panel-heading"><a href="#" data-submenu-href="#submenu-projects">Projects  </a></div>
+                  </div>
+                </div>
+                <ul class="nav-menu hidden-xs visible-sm visible-md visible-lg">
+                  <li id="menu-find-pros" class="nav-menu-item"><a href="#" data-submenu-href="#submenu-find-pros">Find Professionals            </a></li>
+                  <li id="menu-services" class="nav-menu-item"><a href="#" data-submenu-href="#submenu-services">Services            </a></li>
+                  <li id="menu-projects" class="nav-menu-item nav-menu-item-direct-link"><a href="#" data-submenu-href="#submenu-projects">Projects</a></li>
+                  <li id="menu-articles" class="nav-menu-item nav-menu-item-direct-link"><a href="#" data-submenu-href="#submenu-articles">Articles</a></li>
+                </ul>
+                <div class="submenu-container">
+                  <div id="submenu-find-pros" data-menu-href="#menu-find-pros" class="nav-submenu-container hidden">
+                    <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">
+                      <ul class="top-menu-section">
+                        <li> <a href="#">Air Conditioning</a></li>
+                        <li> <a href="#">Audio, Video and Computers</a></li>
+                        <li> <a href="#">Awnings</a></li>
+                        <li> <a href="#">Cabinetry</a></li>
+                        <li> <a href="#">Carpentry</a></li>
+                        <li> <a href="#">Cleaning Service</a></li>
+                        <li> <a href="#">Concrete</a></li>
+                        <li> <a href="#">Decoration and Design</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">
+                      <ul class="top-menu-section">
+                        <li> <a href="#">Air Conditioning</a></li>
+                        <li> <a href="#">Audio, Video and Computers</a></li>
+                        <li> <a href="#">Awnings</a></li>
+                        <li> <a href="#">Cabinetry</a></li>
+                        <li> <a href="#">Carpentry</a></li>
+                        <li> <a href="#">Cleaning Service</a></li>
+                        <li> <a href="#">Concrete</a></li>
+                        <li> <a href="#">Decoration and Design                               </a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">
+                      <ul class="top-menu-section">
+                        <li> <a href="#">Air Conditioning</a></li>
+                        <li> <a href="#">Audio, Video and Computers</a></li>
+                        <li> <a href="#">Awnings</a></li>
+                        <li> <a href="#">Cabinetry</a></li>
+                        <li> <a href="#">Carpentry</a></li>
+                        <li> <a href="#">Electricity</a></li>
+                        <li> <a href="#">Fences, Bars, Welding</a></li>
+                        <li> <a href="#">Floor and Carpet</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">
+                      <ul class="top-menu-section">
+                        <li> <a href="#">Air Conditioning</a></li>
+                        <li> <a href="#">Audio, Video and Computers</a></li>
+                        <li> <a href="#">Awnings</a></li>
+                        <li> <a href="#">Cabinetry</a></li>
+                        <li> <a href="#">Carpentry                   </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="submenu-services" data-menu-href="#menu-services" class="nav-submenu-container hidden">
+                    <div class="col-sm-3 col-md-3 col-lg-3 submenu-col">  
+                      <ul class="top-menu-section">
+                        <li> <a href="#">Air Conditioning</a></li>
+                        <li> <a href="#">Audio, Video and Computers</a></li>
+                        <li> <a href="#">Awnings</a></li>
+                        <li> <a href="#">Cabinetry</a></li>
+                        <li> <a href="#">Carpentry                   </a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 submenu-col"> 
+                      <ul class="top-menu-section">
+                        <li> <a href="#">Air Conditioning</a></li>
+                        <li> <a href="#">Audio, Video and Computers</a></li>
+                        <li> <a href="#">Awnings</a></li>
+                        <li> <a href="#">Cabinetry</a></li>
+                        <li> <a href="#">Carpentry                   </a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 submenu-col"> 
+                      <ul class="top-menu-section">
+                        <li> <a href="#">Air Conditioning</a></li>
+                        <li> <a href="#">Audio, Video and Computers</a></li>
+                        <li> <a href="#">Awnings</a></li>
+                        <li> <a href="#">Cabinetry</a></li>
+                        <li> <a href="#">Carpentry</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-3 submenu-col"> 
+                      <ul>
+                        <li> <a href="#">Cleaning Service</a></li>
+                        <li> <a href="#">Concrete</a></li>
+                        <li> <a href="#">Decoration and Design</a></li>
+                        <li> <a href="#">Doors and Windows</a></li>
+                        <li> <a href="#">Electricity             </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="submenu-projects" data-menu-href="#menu-projects" class="nav-submenu-container hidden">
+                    <ul class="top-menu-section">
+                      <li> <a href="#">Air Conditioning</a></li>
+                      <li> <a href="#">Audio, Video and Computers</a></li>
+                      <li> <a href="#">Awnings</a></li>
+                      <li> <a href="#">Cabinetry</a></li>
+                      <li> <a href="#">Carpentry</a></li>
+                    </ul>
+                  </div>
+                  <div id="submenu-articles" data-menu-href="#menu-articles" class="nav-submenu-container hidden">
+                    <ul class="top-menu-section">
+                      <li> <span class="submenu-head">Air Conditioning</span></li>
+                      <li> <a href="#">Air Conditioning</a></li>
+                      <li> <a href="#">Audio, Video and Computers</a></li>
+                      <li> <a href="#">Awnings</a></li>
+                      <li> <a href="#">Cabinetry</a></li>
+                      <li> <a href="#">Carpentry</a></li>
+                    </ul>
+                    <ul class="top-menu-section">
+                      <li> <span class="submenu-head">Air Conditioning</span></li>
+                      <li> <a href="#">Air Conditioning</a></li>
+                      <li> <a href="#">Audio, Video and Computers</a></li>
+                      <li> <a href="#">Awnings</a></li>
+                      <li> <a href="#">Cabinetry</a></li>
+                      <li> <a href="#">Carpentry</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container pro-projects">
+      <div class="row">
+        <div class="col-xs-12 panel panel-default hidden-md hidden-lg project-side-head-responsive">
+          <div class="panel-body">
+            <div class="dropdown">
+              <button type="button" id="projectNames" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-default dropdown-toggle"><i class="fa fa-filter"> </i><span>Project Names </span><span class="caret"></span></button>
+              <ul aria-labelledby="projectNames" class="dropdown-menu">
+                <li><a href="" class="all-projects-link project-item-name">All Project</a></li>
+                <li><a href="" class="project-item-name">Sliding Doors on Hinges</a></li>
+                <li><a href="" class="project-item-name">Contemporary Spaces with Doors to Match</a></li>
+                <li><a href="" class="project-item-name">Classically White to Fit Any Space</a></li>
+                <li><a href="" class="project-item-name">Traditional Shades of Wood</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+          <div class="projects-side-head"><span class="side-title">Projects</span></div>
+          <div class="projects-side-container">
+            <ul class="project-name-list">
+              <li><a href="" class="all-projects-link project-item-name">All Project</a></li>
+              <li><a href="" class="project-item-name">Sliding Doors on Hinges</a></li>
+              <li><a href="" class="project-item-name">Contemporary Spaces with Doors to Match</a></li>
+              <li><a href="" class="project-item-name">Classically White to Fit Any Space</a></li>
+              <li><a href="" class="project-item-name">Traditional Shades of Wood</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <div class="row">
+            <div class="col-xs-12 projects-center-head">
+              <h2 class="project-title">Traditional Shades of Wood </h2><span>Zip Code: 33146</span>
+              <div class="project-description">
+                <p class="description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="projects-center-container row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+              <div class="row project-item">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"><a href=""> <img src="/Content/pro/images/bedroom.jpg" alt="" class="project-item-image"></a></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">                                       <a href="" class="project-media-title">Contemporary Spaces with Doors to Match                                        </a>
+                  <p class="project-media-description">In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.</p>
+                </div>
+                <ul class="project-media-action in-bottom">
+                  <li><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"> </i></a></li>
+                  <li><a href="">
+                       
+                      Ask  </a><span>|                                          </span></li>
+                  <li><a href=""><span>5 </span>Questions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <h3 class="footer-top-title">Professionals by city</h3>
+              <ul>
+                <li><a href="">Miami, FL</a></li>
+                <li> <a href="">Hialeah, FL                   </a></li>
+                <li> <a href="">Fort Lauderdale, FL                    </a></li>
+                <li> <a href="">Hollywood, FL                    </a></li>
+                <li> <a href="">Miami Beach, FL                    </a></li>
+                <li><a href="">Opa Locka, FL                    </a></li>
+                <li> <a href="" class="btn btn-link view-more">View more                    </a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <h3 class="footer-top-title">Popular Categories</h3>
+              <ul>
+                <li><a href="">Air Conditioning</a></li>
+                <li> <a href="">Cabinetry                  </a></li>
+                <li> <a href="">Fort Lauderdale, FL                    </a></li>
+                <li> <a href="">Electricity                </a></li>
+                <li> <a href="">Handyman Services                 </a></li>
+                <li><a href="">Home Appliances               </a></li>
+                <li> <a href="">Hurricane Home Protection</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <h3 class="footer-top-title">For Pros Services</h3>
+              <ul>
+                <li><a href="">Log in</a></li>
+                <li> <a href="">Claim Pros</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+              <h3 class="footer-top-title">About casafix</h3>
+              <ul>
+                <li><a href="">Contact Us / Customer Service</a></li>
+                <li> <a href="">How it Works for Home Owners</a></li>
+                <li><a href="">How it Works for Pros</a></li>
+                <li> <a href="">Help and FAQs</a></li>
+                <li><a href="">About the Company  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-down">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <h3 class="footer-down-title">We can help you find a Pro</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 phone-link"><a href="tel:+18002774790">+1 (800) 277-4790</a></div>
+            <div class="col-xs-12 col-sm-12 col-md-4 social-links"><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-facebook"></i></a><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-pinterest"></i></a><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-twitter"></i></a><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-google-plus"></i></a><a href="" target="_blank" class="social-cf"><i class="fa fa-2x fa-youtube"></i></a></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 casafix-right">
+              <p>2016 www.casafix.com&nbsp;©&nbsp;All Rights Reserved.<a href="">Privacy Policy<i>|</i></a><a href="">Terms of Service<i>|</i></a><a href="">Refund Policy</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/js/nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js">          </script>
+    <script src="/src/components/bootstrap/js/bootstrap.min.js">           </script>
+    <script src="/src/js/nav.js"></script>
+  </body>
+</html>

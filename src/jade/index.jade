@@ -1,0 +1,294 @@
+extend ./1.base/base.jade
+
+append stylesheet         
+    link(href="/src/css/1.base/nav.css", rel="stylesheet")
+    link(href="/src/css/2.home/style.css", rel="stylesheet")
+block content
+    block nav
+        include ./2.includes/nav
+    append sections
+        div(class="carousel slide" id="search-section" data-ride="carousel")
+            div(class="elements-background")
+                div(class="search-grap")
+                    h1(class='title search-title') Find a Professional 
+                    div(class='home-form-grap')
+                        include ./2.includes/searchform
+            div(class="carousel-inner" role="listbox")
+                div(class="item active")
+                    <img src="/Content/template/images/home/homeslider/slide1.jpg" alt="Professional Working">
+                div(class="item")
+                    <img src="/Content/template/images/home/homeslider/slide2.jpg" alt="Professional Working">
+                div(class="item")
+                    <img src="/Content/template/images/home/homeslider/slide3.jpg" alt="Professional Working">
+        div(id="home-create-project-section")
+            div(class="container")
+                h2(class="title") Have a Pending Home Improvement Project?
+                h3(class="subtitle") Let a Pro find you
+                button(class="btn btn-primary-inverse  btn-lg" id="home-create-project-btn" type="button") Create a Project
+        div(id="latest-project-section")
+            div(class="container-fluid")
+                h2(class="title") Latest Projects
+                    a(href="#")
+                        span(class="badge") 3
+                div(class="row")
+                    div(class="col-xs-12 col-sm-4 col-md-3 latest-project-item")                        
+                            div(class="thumbnail")
+                                div(class="img-home-project-thumbnail")
+                                    img(src="/Content/template/images/home/homelatestprojects/img_3.png" alt="")
+                                div(class="caption")
+                                    h3.caption-title Driveway
+                    div(class="col-xs-12 col-sm-4 col-md-3 latest-project-item")
+                            div(class="thumbnail")
+                                div(class="img-home-project-thumbnail")
+                                    img(src="/Content/template/images/home/homelatestprojects/img_2.png" alt="")
+                                div(class="caption")
+                                    h3.caption-title Kitchen Makeover
+                    div(class="col-xs-12 col-sm-4 col-md-3 latest-project-item")
+                            div(class="thumbnail")
+                                div(class="img-home-project-thumbnail")
+                                    img(src="/Content/template/images/home/homelatestprojects/img_1.png" alt="")
+                                div(class="caption")
+                                    h3.caption-title Pool Maintenance
+        div(id="home-popular-categories-section")
+            div(class="container-fluid")
+                div(class="row")
+                    div(class="col-xs-12 col-sm-3 col-md-3 popular-category-item")
+                        div(class="popular-categories-transparent-layer")
+                            div(class="vertical-center-text")
+                                a(class="popular-category-link") Plumbing
+                                span() View 352 Pros
+                        img(src="/Content/template/images/home/popularcategories/plumbing.jpg" alt="")
+                    div(class="col-xs-12 col-sm-3 col-md-3 popular-category-item")
+                        div(class="popular-categories-transparent-layer")
+                            div(class="vertical-center-text")
+                                a(class="popular-category-link") Painting
+                                span() View 352 Pros
+                        img(src="/Content/template/images/home/popularcategories/painting.jpg" alt="")
+                    div(class="col-xs-12 col-sm-3 col-md-3 popular-category-item")
+                        div(class="popular-categories-transparent-layer")
+                            div(class="vertical-center-text")
+                                a(class="popular-category-link") Flooring
+                                span() View 352 Pros
+                        img(src="/Content/template/images/home/popularcategories/flooring.jpg" alt="")
+                    div(class="col-xs-12 col-sm-3 col-md-3 popular-category-item")
+                        div(class="popular-categories-transparent-layer")
+                            div(class="vertical-center-text")
+                                a(class="popular-category-link") Roofing
+                                span() View 352 Pros
+                        img(src="/Content/template/images/home/popularcategories/roofing.jpg" alt="")
+        div(id="top-categories-section")
+            div(class="container")
+                h2(class="title") Top categories
+                div(class="row")
+                    div(class="col-xs-12 col-sm-4 col-md-4 list-items-container")
+                        ul
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                    div(class="col-xs-12 col-sm-4 col-md-4 list-items-container")
+                        ul
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                    div(class="col-xs-12 col-sm-4 col-md-4 list-items-container")
+                        ul
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+                            li(class="category-item")
+                                a(href="") Air Conditioning
+            div(class="row")
+                div(class="col-xs-12 top-categories-button-container")        
+                    button(class="btn btn-primary btn-lg" id="top-categories-button" type="button") Browse Categories
+        div(id="project-concept-section")
+            div(class="popular-categories-transparent-layer")
+                div(class="vertical-center-text")
+                    h2(class="title bold") Project Concept
+                    h3(class="subtitle") The fast and easy way to find and hire home repair services in your area
+                    button(class="btn btn-primary-transparent btn-lg" id="top-categories-button" type="button") Post a Project
+           
+        div(id="how-things-work-section")
+            div(class="container")
+                h2(class="title") How Things Work Around Here
+                div(class="row")
+                    div(class="col-xs-12 col-sm-4 col-md-4")
+                        div(class="thumbnail")                            
+                            i(class="fa fa-6x fa-search step-icon" aria-hidden="true")
+                            hr(class="line hidden-xs")
+                            div(class="caption")
+                                h3(class="caption-title") Find a pro
+                                p It all starts with entering details about the type of project and location
+                    div(class="col-xs-12 col-sm-4 col-md-4")                            
+                        div(class="thumbnail")
+                            i(class="fa fa-6x fa-desktop step-icon" aria-hidden="true")
+                            hr(class="line line-two hidden-xs")
+                            div(class="caption")                                
+                                h3(class="caption-title") Match your search
+                                p Browse through the listing recommendations for specific classifications
+                    div(class="col-xs-12 col-sm-4 col-md-4")
+                        div(class="thumbnail")
+                            i(class="fa fa-6x fa-check-circle-o step-icon" aria-hidden="true")                            
+                            div(class="caption")                           
+                                h3(class="caption-title") Get it done
+                                p Choose a professional that will meet your improvement goals
+        div(id="are-you-a-pro-section")
+            div(class="are-you-a-pro-transparent-layer")
+                div(class="vertical-center-text")
+                    h2(class="title bold") Are you a Pro?
+                    button(class="btn btn-primary-transparent btn-lg" id="join-button" type="button") Join Casafix           
+        div(id="home-map-section")
+        div(id="homeowner-favorites-section")
+            div(class="container")
+                h2(class="title") Home Owner's Favorites
+                div(class="row")
+                    div(class="col-xs-12")
+                        div(id="favorites-carousel" class="carousel slide" data-ride="carousel" data-interval="false")
+                            div(class="carousel-inner" role="listbox")
+                                //div(class="item active")
+                                    ul
+                                        li
+                                            div(class="thumbnail")
+                                                img(src="/Content/template/images/home/ownerfavorites/gardening.jpg" alt="Gardening")
+                                                div(class="caption")
+                                                    h3(class="caption-title") Gardening
+                                                    p
+                                                        a(href="") Miami
+                                                        |, 
+                                                        a(href="") Hialeah
+                                                        |, 
+                                                        a(href="") Kendall
+                                        li
+                                            div(class="thumbnail")
+                                                img(src="/Content/template/images/home/ownerfavorites/pool.jpg" alt="Pool")
+                                                div(class="caption")
+                                                    h3(class="caption-title") Pool Service
+                                                    p
+                                                        a(href="") Miami
+                                                        |, 
+                                                        a(href="") Hialeah
+                                                        |, 
+                                                        a(href="") Kendall
+                                        li
+                                            div(class="thumbnail")
+                                                img(src="/Content/template/images/home/ownerfavorites/driveway.jpg" alt="Driveway")
+                                                div(class="caption")
+                                                    h3(class="caption-title") Driveway
+                                                    p
+                                                        a(href="") Miami Gardens
+                                                        |, 
+                                                        a(href="") Hialeah
+                                                        |, 
+                                                        a(href="") Kendall
+                                                        |, 
+                                                        a(href="") homestead
+                                        li
+                                            div(class="thumbnail")
+                                                img(src="/Content/template/images/home/ownerfavorites/roofing.jpg" alt="Roofing")
+                                                div(class="caption")
+                                                    h3(class="caption-title") Roofing
+                                                    p
+                                                        a(href="") Homestead
+                                                        |, 
+                                                        a(href="") Fort Lauderdale
+                                                        |, 
+                                                        a(href="") Kendall                                                        
+                           
+                                div(class="item active")
+                                    ul
+                                        li
+                                            div(class="thumbnail")
+                                                img(src="/Content/template/images/home/ownerfavorites/gardening.jpg" alt="Gardening")
+                                                div(class="caption")
+                                                    h3(class="caption-title") Gardening
+                                                    p
+                                                        a(href="") Miami
+                                                        |, 
+                                                        a(href="") Hialeah
+                                                        |, 
+                                                        a(href="") Kendall
+                                div(class="item")
+                                    ul
+                                        li
+                                            div(class="thumbnail")
+                                                img(src="/Content/template/images/home/ownerfavorites/pool.jpg" alt="Pool")
+                                                div(class="caption")
+                                                    h3(class="caption-title") Pool Service
+                                                    p
+                                                        a(href="") Miami
+                                                        |, 
+                                                        a(href="") Hialeah
+                                                        |, 
+                                                        a(href="") Kendall
+                                div(class="item")
+                                    ul
+                                        li
+                                            div(class="thumbnail")
+                                                img(src="/Content/template/images/home/ownerfavorites/pool.jpg" alt="Pool")
+                                                div(class="caption")
+                                                    h3(class="caption-title") Pool Service
+                                                    p
+                                                        a(href="") Miami
+                                                        |, 
+                                                        a(href="") Hialeah
+                                                        |, 
+                                                        a(href="") Kendall
+                            a(class="left carousel-control" href="#favorites-carousel" role="button" data-slide="prev")
+                                i(class="fa fa-angle-left" aria-hidden="true")
+                                span(class="sr-only") Previous
+                            a(class="right carousel-control" href="#favorites-carousel" role="button" data-slide="next")
+                                i(class="fa fa-angle-right" aria-hidden="true")
+                                //<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                span(class="sr-only") Next
+    append footer
+        include ./2.includes/footer
+    append scripts
+        script(src="/src/js/nav.js")

@@ -1,0 +1,18 @@
+form(name="search-for-item" action="/projects/search" role="search" method="get" class="form-inline navbar-search-project criteria")
+    div(class="form-group")
+        label(class="sr-only" for="classified-search-criteria")
+        div(class="input-group")
+            span(class="input-group-addon" style="width:1%;")
+                i(class="fa fa-search")
+            input(id="classified-search-criteria" name="q" class="form-control" type="text" placeholder="@Resources.lblSearch...")
+form(name="search-location" role="search" class="form-inline navbar-search-project location")
+    div(class="form-group")
+        div(class="input-group")
+            span(class="input-group-btn" style="width:1%;")
+                button(id="geo-location" class="btn btn-default" type="button" onclick="javascript:detectLocation()")
+                    i(class="fa fa-map-marker")
+                i(id="loading-indicator" class="fa fa-refresh fa-spin fa-3x fa-fw")
+                span(class="sr-only") @Resources.lblLoading...
+            input(id="autocomplete-location" name="input_location" class="form-control" type="text" placeholder="@Resources.lblEnterALocation" value="@currentLocation")
+            span(class="input-group-btn" style="width:1%;")
+                button(id="search-submit-button" class="btn btn-default" type="button") Go!

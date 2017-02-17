@@ -1,0 +1,10 @@
+.login-dropdown .user-menu {
+  border-radius: 0; }
+  .login-dropdown .user-menu .badge {
+    margin-left: 6px;
+    color: #fff !important; }
+
+.login-dropdown .authenticated {
+  display: block !important; }
+
+/*# sourceMappingURL=../../maps/1.base/login.css.map */

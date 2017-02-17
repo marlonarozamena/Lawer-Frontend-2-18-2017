@@ -1,0 +1,79 @@
+extend ./1.base/base.jade
+
+append stylesheet         
+    link(href="/src/css/1.base/nav.css", rel="stylesheet")  
+    link(href="/src/css/3.prooverview/proprojects.css", rel="stylesheet")
+block content
+    block nav
+        include ./2.includes/nav
+    append sections
+        div(class="container pro-projects")
+            div(class="row")
+                div(class="col-xs-12 panel panel-default hidden-md hidden-lg project-side-head-responsive")
+                    div(class="panel-body")
+                        div(class="dropdown")
+                            button(class="btn btn-default dropdown-toggle" type="button" id="projectNames" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true")
+                                i(class="fa fa-filter") 
+                                span Project Names 
+                                span(class="caret")
+                            ul(class="dropdown-menu" aria-labelledby="projectNames")
+                                li
+                                    a(class="all-projects-link project-item-name" href="") All Project
+                                li
+                                    a(class="project-item-name" href="") Sliding Doors on Hinges
+                                li
+                                    a(class="project-item-name" href="") Contemporary Spaces with Doors to Match
+                                li
+                                    a(class="project-item-name" href="") Classically White to Fit Any Space
+                                li
+                                    a(class="project-item-name" href="") Traditional Shades of Wood
+                div(class="col-md-4 col-lg-4 hidden-xs hidden-sm")
+                    div(class="projects-side-head")
+                        span(class="side-title") Projects
+                    div(class="projects-side-container")
+                        ul(class="project-name-list")
+                            li
+                                a(class="all-projects-link project-item-name" href="") All Project
+                            li
+                                a(class="project-item-name" href="") Sliding Doors on Hinges
+                            li
+                                a(class="project-item-name" href="") Contemporary Spaces with Doors to Match
+                            li
+                                a(class="project-item-name" href="") Classically White to Fit Any Space
+                            li
+                                a(class="project-item-name" href="") Traditional Shades of Wood
+                div(class="col-xs-12 col-sm-12 col-md-8 col-lg-8")
+                    div(class="row")
+                        div(class="col-xs-12 projects-center-head")
+                            h2(class="project-title") Traditional Shades of Wood 
+                            span Zip Code: 33146
+                            div(class="project-description")
+                                p(class="description") In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.                    
+                    div(class="projects-center-container row")
+                        div(class="col-xs-12 col-sm-12 col-md-12")
+                            each i in new Array(10)
+                                div(class="row project-item")
+                                    div(class="col-xs-12 col-sm-12 col-md-6 col-lg-6")
+                                        a(href="") 
+                                            img(src="/Content/pro/images/bedroom.jpg" class="project-item-image" alt="")
+                                    div(class="col-xs-12 col-sm-12 col-md-6 col-lg-6")                                        
+                                        a( href="" class="project-media-title") Contemporary Spaces with Doors to Match                                        
+                                        p(class="project-media-description") In the master bedroom, the subtle use of color keeps the mood serene. The modern king-sized bed is from B@B Italia. The Willy Dilly Lamp is by Ingo Maurer and the white Oregani linens were purchased at Luminaire.
+                                    ul(class="project-media-action in-bottom")
+                                        li
+                                            a(class="social-cf" href="" target="_blank")
+                                                i(class="fa fa-2x fa-facebook") 
+                                                
+                                        li
+                                            a(href="") 
+                                                | Ask  
+                                            span |                                          
+                                        li
+                                            a(href="")
+                                                span 5 
+                                                | Questions
+                                            
+    append footer
+        include ./2.includes/footer
+    append scripts
+        script(src="/src/js/nav.js")

@@ -1,0 +1,312 @@
+.project-actions-container {
+  margin-top: 5px;
+  padding: 5px; }
+  .project-actions-container .btn-primary {
+    margin-right: 5px; }
+
+.fb-share {
+  display: inline-block; }
+
+#image-ask-container .ask-form-text {
+  margin-top: 5px; }
+
+#image-ask-container .ask-form-btn {
+  border-radius: 4px; }
+
+#askModalTitle {
+  font-size: 1.2em; }
+
+.image-detail .img-detail-name {
+  font-size: 1.2em; }
+
+.question-user img, .comment-user img {
+  max-width: 30px; }
+
+.question-user span, .comment-user span {
+  padding-left: 5px;
+  font-size: 1em; }
+
+.ask-form-text {
+  border-radius: 4px;
+  margin-top: 10px; }
+
+.input-group-ask-form {
+  width: 100%; }
+
+#imagesModal .modal-content {
+  max-height: 671px;
+  min-height: 671px;
+  overflow-y: scroll; }
+
+.question-content, .comment-content {
+  margin-top: 10px; }
+  .question-content p, .comment-content p {
+    font-size: .9em; }
+
+.question-action {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 8px; }
+
+.question-action ul, .comment-actions ul {
+  padding-left: 0; }
+  .question-action ul li, .comment-actions ul li {
+    list-style: none;
+    display: inline-block; }
+
+.submit-comment {
+  margin-top: 10px; }
+
+.image-question-comments .image-question-comment {
+  margin: 0 2px; }
+
+.image-questions-and-response-container {
+  margin-top: 10px; }
+
+.slide-container .item img {
+  position: relative !important;
+  margin: auto !important;
+  width: auto;
+  height: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.slide-container #list-carousel-project-items {
+  padding: 10px; }
+
+.slide-container #carousel-project-items {
+  min-height: 80px; }
+  .slide-container #carousel-project-items .carousel-control .glyphicon-chevron-right, .slide-container #carousel-project-items .carousel-control .glyphicon-chevron-left {
+    margin-top: -93px !important; }
+  .slide-container #carousel-project-items .indicator-item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border: 1px solid #ddd;
+    padding: 2px; }
+    .slide-container #carousel-project-items .indicator-item .indicator-item-image {
+      background-position: 50%;
+      border-radius: 3px !important;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: pointer;
+      opacity: .6; }
+    .slide-container #carousel-project-items .indicator-item .indicator-item-image.active {
+      opacity: 1; }
+
+.slide-container .carousel-control {
+  background-image: none; }
+  .slide-container .carousel-control span {
+    color: black; }
+
+.pro-projects {
+  top: 77px;
+  position: relative;
+  border: 1px solid #ddd;
+  margin-bottom: 150px; }
+
+.project-side-head-responsive {
+  border-radius: 0; }
+  .project-side-head-responsive .dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: normal; }
+  .project-side-head-responsive .panel-body {
+    padding: 15px 5px; }
+  .project-side-head-responsive .dropdown {
+    width: 276px;
+    display: block;
+    margin: 0 auto; }
+    .project-side-head-responsive .dropdown button {
+      margin: 0 auto;
+      display: block;
+      width: 100%; }
+    .project-side-head-responsive .dropdown ul {
+      width: 100%; }
+
+.all-projects-center-head {
+  font-size: 2em;
+  margin-bottom: 5px; }
+
+.all-projects-center-container .thumbnail .all-project-thumbnail-img-container {
+  min-height: 207px;
+  max-height: 207px;
+  position: relative;
+  overflow: hidden; }
+  .all-projects-center-container .thumbnail .all-project-thumbnail-img-container img.all-project-thumbnail-img {
+    display: block;
+    position: relative !important;
+    margin: auto !important;
+    width: auto !important;
+    height: auto !important;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; }
+
+.all-projects-center-container .thumbnail .caption .project-thumbnail-title {
+  font-weight: 600;
+  font-size: 1.1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.projects-side-head {
+  text-align: left;
+  padding: 20px 10px 10px 10px; }
+  .projects-side-head .side-title {
+    font-size: 1.8em; }
+
+.projects-side-container .project-name-list {
+  padding: 0;
+  display: block; }
+  .projects-side-container .project-name-list li {
+    list-style: none;
+    padding: 6px 10px !important; }
+    .projects-side-container .project-name-list li a.project-item-name {
+      color: #000000;
+      text-decoration: none; }
+    .projects-side-container .project-name-list li a.project-item-name:hover {
+      color: #2196f3;
+      text-decoration: underline; }
+    .projects-side-container .project-name-list li a.project-item-name.active {
+      color: #2196f3; }
+
+.in-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0px; }
+
+.projects-center-head {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 20px;
+  text-align: center; }
+
+.projects-center-container .project-item {
+  position: relative;
+  padding: 15px 0px;
+  text-align: center;
+  border-bottom: 1px solid #dddddd; }
+  .projects-center-container .project-item .project-media-description {
+    margin-bottom: 30px;
+    overflow: hidden; }
+  .projects-center-container .project-item .project-media-title {
+    color: #2196f3;
+    font-size: 1.5em; }
+  .projects-center-container .project-item .project-media-title:hover {
+    color: #000000;
+    text-decoration: none; }
+  .projects-center-container .project-item .project-item-image {
+    max-width: 290px;
+    height: auto; }
+  .projects-center-container .project-item .project-media-action {
+    padding: 0;
+    display: block; }
+    .projects-center-container .project-item .project-media-action li {
+      list-style: none;
+      display: inline-block; }
+
+@media (max-width: 425px) {
+  #imagesModal .modal-content {
+    max-height: 471px;
+    min-height: 471px;
+    overflow-y: scroll; } }
+
+@media (min-width: 768px) {
+  #imagesModal .modal-content {
+    max-height: 671px;
+    min-height: 671px;
+    overflow-y: scroll; }
+  .slide-container #carousel-project-items .carousel-control .glyphicon-chevron-right, .slide-container #carousel-project-items .carousel-control .glyphicon-chevron-left {
+    margin-top: -98px !important; }
+  #imagesModal .modal-dialog {
+    width: 90%; }
+  .all-projects-center-container .thumbnail .all-project-thumbnail-img-container {
+    min-height: 207px;
+    max-height: 207px; }
+  .in-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: -6px; }
+  .project-item {
+    text-align: center; }
+    .project-item .project-media-description {
+      margin-bottom: 30px; }
+    .project-item .project-item-image {
+      max-width: 306px; }
+  .projects-center-head {
+    text-align: center; }
+  .project-side-head-responsive {
+    border-radius: 0; }
+    .project-side-head-responsive .dropdown {
+      width: 400px;
+      display: block;
+      margin: 0 auto; }
+      .project-side-head-responsive .dropdown button {
+        margin: 0 auto;
+        display: block;
+        width: 100%; } }
+
+@media (min-width: 992px) {
+  #imagesModal .modal-content {
+    max-height: 700px;
+    min-height: 700px;
+    overflow-y: scroll; }
+  .slide-container #carousel-project-items .carousel-control .glyphicon-chevron-right, .slide-container #carousel-project-items .carousel-control .glyphicon-chevron-left {
+    margin-top: -98px !important; }
+  #imagesModal .modal-dialog {
+    width: 80%; }
+  .all-projects-center-container .thumbnail .all-project-thumbnail-img-container {
+    min-height: 137px;
+    max-height: 137px; }
+  .in-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 350px; }
+  .project-item {
+    text-align: left !important; }
+    .project-item .project-media-description {
+      margin-bottom: 10px; }
+    .project-item .project-item-image {
+      max-width: 306px; }
+  .projects-center-head {
+    text-align: left; } }
+
+@media (min-width: 1200px) {
+  #imagesModal .modal-content {
+    max-height: 900px;
+    min-height: 900px;
+    overflow-y: scroll; }
+  .slide-container #carousel-project-items .carousel-control .glyphicon-chevron-right, .slide-container #carousel-project-items .carousel-control .glyphicon-chevron-left {
+    margin-top: -60px !important; }
+  #imagesModal .modal-dialog {
+    width: 80%; }
+  .all-projects-center-container .thumbnail .all-project-thumbnail-img-container {
+    min-height: 170px;
+    max-height: 170px; }
+  .in-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 400px; }
+  .project-item {
+    text-align: left !important; }
+    .project-item .project-media-description {
+      margin-bottom: 10px; }
+    .project-item .project-item-image {
+      max-width: 370px !important; }
+  .projects-center-head {
+    text-align: left; } }
+
+/*# sourceMappingURL=../../maps/3.prooverview/proprojects.css.map */

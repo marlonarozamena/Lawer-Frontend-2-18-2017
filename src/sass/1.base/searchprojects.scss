@@ -1,0 +1,96 @@
+@import "../1.base/colors.scss";
+@import "media.scss";
+.navbar-search-project{    
+        .form-group {
+            width: 100%!important;
+        }  
+}
+.form-inline.navbar-search-project{
+    display: inline-block;   
+    margin-bottom: 0;
+    vertical-align: middle;
+    .form-control{
+        height: 41px;
+        border-radius: 0;
+        padding-left: 5px;
+    }
+    .input-group-addon{
+        border-radius: 0;
+    }
+    input#autocomplete-location, input#classified-search-criteria{
+        padding-left: 5px!important;
+    }
+}
+.form-inline.navbar-search-project.criteria{
+    width: 100%;
+}
+.form-inline.navbar-search-project.location{
+    width: 100%;
+}
+.spanded-form{
+    .form-inline.navbar-search-project.criteria{
+        width: 100%;
+    }
+    .form-inline.navbar-search-project.location{
+        width: 100%;
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+
+.form-inline.navbar-search-project.criteria{
+    width: 280px;
+}
+.form-inline.navbar-search-project.location{
+    width: 240px;
+}
+.spanded-form{
+    .form-inline.navbar-search-project.criteria{
+        width: 240px;
+    }
+    .form-inline.navbar-search-project.location{
+        width: 270px;
+    }
+}
+
+.navbar-search-project{
+    .input-group{
+        height: 41px;
+        border-radius: 0;
+    }
+}
+}
+@media (min-width: $screen-md-min) {
+    .form-inline.navbar-search-project.criteria{
+    width: 320px;
+}
+.form-inline.navbar-search-project.location{
+    width: 280px;
+}
+.spanded-form{
+    .form-inline.navbar-search-project.criteria{
+        width: 260px;
+    }
+    .form-inline.navbar-search-project.location{
+        width: 290px;
+    }
+}
+
+}
+@media (min-width: $screen-lg-min) {
+    .form-inline.navbar-search-project.criteria{
+    width: 320px;
+}
+.form-inline.navbar-search-project.location{
+    width: 280px;
+}
+.spanded-form{
+    .form-inline.navbar-search-project.criteria{
+        width: 360px;
+    }
+    .form-inline.navbar-search-project.location{
+        width: 360px;
+    }
+}
+
+}

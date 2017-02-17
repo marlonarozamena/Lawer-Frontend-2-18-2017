@@ -1,0 +1,38 @@
+//nav with class navbar-menu-down  is for other pages different than Home.
+//nav(class="navbar navbar-default navbar-fixed-top navbar-menu-down" id="base-navbar")
+//nav with class navbar-menu-top is for Home page or other containing the search.
+nav(class="navbar navbar-default navbar-fixed-top navbar-menu-top" id="base-navbar")
+    div(class="container")
+        div(class="nav-top-container")
+            div(class="navbar-header")
+                button(type="button" class="navbar-toggle navbar-toggle-menu collapsed" data-toggle="collapse" data-target="#nav-top-right-container" aria-expanded="false")
+                    span(class="sr-only") Toggle navigation
+                    span(class="icon-bar")
+                    span(class="icon-bar")
+                    span(class="icon-bar")
+                button(type="button" class="navbar-toggle navbar-toggle-search collapsed" data-toggle="collapse" data-target="#top-search-form" aria-expanded="false")
+                    span(class="sr-only") Toggle Search Business Form 
+                    i(class="fa fa-search")
+                button(type="button" class="navbar-toggle navbar-toggle-user collapsed" data-toggle="collapse" data-target="#login-top" aria-expanded="false")
+                    span(class="sr-only") Toggle User Options 
+                    i(class="fa fa-user")
+                    span(class="caret")
+                div(id="brand-container" class="")
+                    a(class="navbar-brand" href="#")
+                        img(class=" img-lg visible-lg hidden-md hidden-sm hidden-xs" src="/Content/template/images/logos/casafix_lg.png" alt="Pro Working")
+                        img(class="img-sm visible-xs visible-sm visible-md hidden-lg" src="/Content/template/images/logos/casafix.png" alt="Pro Working")                        
+            div(class="collapse navbar-collapse hidden-in-big" id="top-search-form")
+                include searchform
+            div(class="collapse login-top-container navbar-right authenticated" id="login-top")
+                include loginnoauthenticated
+            div(class="collapse navbar-collapse pull-right" id="nav-top-right-container")
+                div(class="" id="nav-top-menu")               
+                div(class="list-business-button-container")
+                    button(class="btn btn-primary btn-business navbar-buttom-inverse btn-sm"  type="button") List your business
+                    button(class="btn btn-primary btn-project navbar-buttom-alternative btn-sm" id="btn-search-small-project" type="button") Post a Project
+           
+        div(class="nav-bottom-container hidden")
+            div(class="nav-bottom-center")
+                div(class="collapse navbar-collapse" id="nav-bottom-menu")
+                    include mainmenu
+               

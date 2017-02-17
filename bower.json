@@ -1,0 +1,24 @@
+{
+  "name": "casafix-frontend",
+  "description": "Frontend CasaFix",
+  "main": "index.js",
+  "authors": [
+    "Denny Puig & Marlon Arozamena"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "CasaFix"
+  ],
+  "homepage": "https://github.com/dennypuig/casafix-frontend",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

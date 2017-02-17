@@ -1,0 +1,14 @@
+.login-dropdown
+{
+    .user-menu{
+        border-radius: 0;
+        .badge{
+            margin-left: 6px;
+            color: #fff!important;
+        }
+    }
+    .authenticated{
+        display: block!important;
+    }
+    
+}

@@ -1,0 +1,249 @@
+@import "colors.scss";
+@import "media.scss";
+@import "fonts.scss";
+$section-margin-top:50px;
+//Fonts
+
+body{
+    background: $base;
+}
+.multiselect-container.dropdown-menu{
+    width: 100%;
+}
+#addServiceModal{
+    .form-control.multiselect-search{
+        height: 39px;
+    }
+}
+.padding-breadcrumb-top{
+    padding-top: 30px;
+}
+.blog-page{
+    padding-bottom: 20px; 
+}
+#topCities{
+    padding-bottom: 40px;
+}
+#search-where{
+    border-radius: 0;
+}
+.wrapper{
+    margin-top: $section-margin-top!important;
+    min-height: 434px;
+}
+.padding-wrapper{
+    margin-top: $section-margin-top!important;
+    padding: 30px 15px;
+}
+//Animations
+@keyframes animateHeight {
+    0%{height: 0;}    
+    100%{height: 100%;}
+}
+@keyframes animateHeightInverse {
+    0%{height: 0;}    
+    100%{height: 100%;}
+}
+.animate-height{   
+    position: relative;    
+    animation-name: animateHeight;
+    animation-duration: 1.5s;
+}
+.animate-height-inverse{   
+    position: relative;    
+    animation-name: animateHeightInverse;
+    animation-duration: 1.5s;
+}
+//Titles
+.title{
+    margin-top: 0;
+    font-family: "SourceSansPro-Light";
+    font-size: 2em;
+}
+.title.bold{ 
+    font-family: "SourceSansPro-Semibold";    
+}
+h1.title{
+    font-family: "SourceSansPro-Semibold";
+    font-size: 2em;
+}
+.subtitle{
+     font-family: "SourceSansPro-Light";
+    font-size: 1.3em;
+}
+
+.btn-primary{
+    border-radius: 0;
+    background: $primary-button-background;
+    font-size: 1.1em;    
+    color: $primary-button-color;
+    border: 1px solid $primary-button-background;
+}
+.btn-primary.navbar-buttom{
+    border-radius: 0!important;
+    background: $primary-button-background!important;
+    font-size: 1.1em!important;    
+    color: $primary-button-color!important;
+    border: 1px solid $primary-button-background!important;
+}
+.btn-primary.navbar-buttom-alternative{
+    border-radius: 0!important;
+    background: $navbar-alternative-button-color!important;
+    font-size: 1.1em!important;    
+    color: $primary-button-color!important;
+    border: 1px solid $navbar-alternative-button-color!important;
+}
+.btn-primary.navbar-buttom-inverse{
+    border-radius: 0!important;
+    background: $inverse-primary-button-background!important;
+    font-size: 1.1em!important;    
+    color: $inverse-primary-button-color!important;
+    border: 1px solid $inverse-primary-button-color!important;
+}
+.btn-primary:hover{    
+    background: $inverse-primary-button-background;
+    color: $inverse-primary-button-color;
+    border: 1px solid $inverse-primary-button-color;
+}
+.btn-primary.navbar-buttom-inverse:hover{    
+    background: $primary-button-background!important;
+    color: $primary-button-color!important;
+    border: 1px solid $primary-button-color!important;
+}
+.btn-primary.navbar-buttom-alternative:hover{
+    background: $inverse-primary-button-background!important;
+    color: $navbar-alternative-button-color!important;
+    border: 1px solid $navbar-alternative-button-color!important;
+}
+.btn-primary.navbar-buttom:hover{    
+    background: $inverse-primary-button-background!important;
+    color: $inverse-primary-button-color!important;
+    border: 1px solid $inverse-primary-button-color!important;
+}
+.btn-primary-inverse{
+    border-radius: 0;
+    background: $inverse-primary-button-background;
+    color: $inverse-primary-button-color;
+    border: 1px solid $inverse-primary-button-color;
+    font-size: 1.1em;
+      
+}
+.btn-primary-inverse:hover{
+    background: $primary-button-background;
+    color: $primary-button-color;
+    border: 1px solid $primary-button-color;
+}
+.btn-primary-transparent{
+    border-radius: 0;
+    font-size: 1.1em;    
+    background: transparent;
+    border: 1px solid $primary-transparent-buttom-color;
+    color: $primary-transparent-buttom-color;
+}
+.btn-primary-transparent:hover{
+    background: $inverse-primary-button-background;
+    border: 1px solid $primary-button-background;
+    color: $primary-button-background;
+}
+.btn-lg {
+    font-size: 1.2em;
+    padding: 13px 40px;
+}
+.btn-md{
+    font-size: 1.1em;
+    padding: 8px 40px;
+}
+.btn-sm{
+    font-size: 1.1em;
+    padding: 8px 10px;
+}
+.btn-sm.navbar-buttom, .btn-sm.navbar-buttom-inverse, .btn-sm.navbar-buttom-alternative{
+    font-size: .9em!important;
+    padding: 9px 5px!important;
+    font-weight: bold;
+}
+
+.btn-xs{
+    font-size: 1em;
+    padding: 5px 15px;
+}
+.hidden{
+    display : none!important;
+}
+.title{
+    text-align: center;
+}
+span.twitter-typeahead{
+    width: 100%;
+}
+@media (min-width: $screen-sm-min) {
+    $section-margin-top:70px;
+    .btn-sm.navbar-buttom, .btn-sm.navbar-buttom-inverse, .btn-sm.navbar-buttom-alternative{
+        font-size: .9em!important;
+        padding: 9px 10px!important;
+        font-weight: bold;
+    }
+    span.twitter-typeahead{
+        width: auto;
+    }
+    .carousel-control{
+        width: 10%!important;
+    }
+    .wrapper{
+        margin-top: $section-margin-top!important;
+    }
+    .padding-wrapper{
+        margin-top: $section-margin-top!important;
+        padding: 48px 15px;
+    }
+    .container {
+    //width: 890px;
+    padding-right: 0;
+    padding-left: 0;    
+    }
+    .title{
+    font-size: 2.5em;
+}
+h1.title{
+    font-family: "SourceSansPro-Semibold";
+    font-size: 3.5em;
+}
+.subtitle{
+     font-family: "SourceSansPro-Light";
+    font-size: 1.5em;
+}
+.btn-lg{
+    font-size: 1.3em;
+    padding: 16px 70px;
+}
+.btn-sm.navbar-buttom, .btn-sm.navbar-buttom-inverse, .btn-sm.navbar-buttom-alternative{
+        font-size: .9em!important;
+        padding: 9px 10px!important;
+    }
+}
+@media (min-width: $screen-md-min) {
+    .btn-sm.navbar-buttom, .btn-sm.navbar-buttom-inverse, .btn-sm.navbar-buttom-alternative  {
+        font-size: .9em!important;
+        padding: 9px 10px!important;
+    }
+    .btn-sm{
+    font-size: 1.1em;
+    padding: 8px 20px;
+}
+.title{
+    font-size: 3em;
+}
+h1.title{
+    font-family: "SourceSansPro-Semibold";
+    font-size: 4em;
+}
+.subtitle{
+     font-family: "SourceSansPro-Light";
+    font-size: 2em;
+}
+}
+@media (min-width: $screen-lg-min) {
+    .container {
+        //width: 1170px;
+    }
+}

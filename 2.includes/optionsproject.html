@@ -1,0 +1,24 @@
+
+<div class="dropdown project-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Project<span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="/projects"><i class="fa fa-external-link-square"></i>Go to @Resources.lblProjects</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="/project/new"><i class="fa fa-plus-square"></i>@Resources.lblPostAProject</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="@Url.Action('UserProjects', 'ClassifiedProject', new { id = User.Identity.GetUserId() })"><i class="fa fa-suitcase"></i>@Resources.lblMy @Resources.lblProjects        </a></li>
+    <!--@if (User.Identity.GetPlan() == "2" || User.Identity.GetPlan() == "3")-->
+    <!--{-->
+    <li role="separator" class="divider"></li>
+    <li><a href="@Url.Action('FollowingList', 'ClassifiedProject')"><i class="fa fa-star"></i>@Resources.lblWatching @Resources.lblProjects</a></li>
+    <!--}-->
+  </ul>
+</div>
+<div class="dropdown user-dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-user"></i>Denny<span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="@Url.Action('RegisterEdit', 'Account')"><i class="fa fa-pencil"></i>@Resources.lblProfile</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="@Url.Action('Index', 'ClassifiedAsk')"><i class="fa fa-comments"></i>@Resources.lblClassifiedMessages<span class="badge @hiddenClass ">@ViewData["countMessages"]</span></a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="@Url.Action('LogOff', 'Account')"><i class="fa fa-sign-out"></i>@Resources.lblLogout</a></li>
+  </ul>
+</div>
