@@ -1,0 +1,133 @@
+extend ./1.base/base.jade
+append stylesheet
+    link(href="/src/css/3.search/searchmovil.css", rel="stylesheet", media="screen and (min-width: 0px) and (max-width: 519px)")
+    link(href="/src/css/3.search/searchtablet.css", rel="stylesheet", media="screen and (min-width: 520px) and (max-width: 767px)")
+    link(href="/src/css/3.search/searchsm.css", rel="stylesheet", media="screen and (min-width: 768px) and (max-width: 991px)")
+    link(href="/src/css/3.search/searchmd.css", rel="stylesheet", media="screen and (min-width: 992px) and (max-width: 1199px)")
+    link(href="/src/css/3.search/searchlg.css", rel="stylesheet", media="screen and (min-width: 1200px)")
+block content
+    block nav
+        include ./2.includes/navwithoutsearch
+    div(class="sections-wrapper")
+        append sections            
+            div(id="search-result" class="container")
+                div(class="row search-section")
+                    div(class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-container")
+                        include ./2.includes/searchform
+                div(class="row headline")
+                    div(class="col-xs-12")
+                        h1(class="result-headline")
+                            | Miami, FL Child support lawyers
+                            span(class="badge") 45
+                        h1(class="no-result-headline")
+                div(class="row")
+                    div(class="col-xs-12 col-sm-8 col-md-8 col-lg-8 result")
+                        div(class="row sponsored-listing")
+                            div(class="col-xs-12")
+                                each _ in Array(5)
+                                    div(class="row result-item")
+                                        div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 item-img")
+                                            a(href="")
+                                                img(class="img-responsive" src="/Content/template/images/lawyer/lawyer2img.jpg")
+                                        div(class="col-xs-12 col-sm-10 col-md-10 col-lg-10 item-content")
+                                            div(class="row")
+                                                div(class="col-xs-8")
+                                                    h3(class="item-name") 
+                                                        a(href="") Kathryn Halmilton
+                                                div(class="col-xs-4")
+                                                    span(class="is-sponsored pull-right") sponsored 
+                                            div(class="row")
+                                                div(class="col-xs-6")
+                                                    div(class="rating-stars")
+                                                        div(class="rating-stars-top" style="width: 0%")
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                        div(class="rating-stars-bottom")
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                    div(class="rating-count")
+                                                        span 38
+                                                        span reviews
+                                                div(class="col-xs-6")
+                                                    span(class="item-Licensed-for pull-right") Licensed for 18 years
+                                            div(class="row")
+                                                div(class="col-xs-6")
+                                                    span(class="item-firm") The Hamilton Law Firm
+                                                    span  
+                                                    span(class="item-firm-place") Miami, FL   
+                                            div(class="row")
+                                                div(class="col-xs-12")
+                                                    p(class="item-practice-area") Divorce and separation, Family, Child custody, Child support...
+                                            div(class="row")
+                                                div(class="col-xs-12 item-actions")
+                                                    a(href="" class="col-xs-4")
+                                                        i(class="fa fa-phone" aria-hidden="true")
+                                                        span (305) 912-9810
+                                                    a(href="" class="col-xs-4")
+                                                        i(class="fa fa-envelope" aria-hidden="true")
+                                                        span Email
+                                                    a(href="" class="col-xs-4")
+                                                        i(class="fa fa-globe" aria-hidden="true")
+                                                        span WebSite                                
+                        div(class="row common-listing")
+                            div(class="col-xs-12")
+                                each _ in Array(5)
+                                    div(class="row result-item")
+                                        div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 item-img")
+                                            a(href="")
+                                                img(class="img-responsive" src="/Content/template/images/lawyer/lawyer1img.jpg")
+                                        div(class="col-xs-12 col-sm-10 col-md-10 col-lg-10 item-content")
+                                            div(class="row")
+                                                div(class="col-xs-8")
+                                                    h3(class="item-name") 
+                                                        a(href="") Nydia N Streets                                
+                                            div(class="row")
+                                                div(class="col-xs-6")
+                                                    div(class="rating-stars")
+                                                        div(class="rating-stars-top" style="width: 0%")
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                        div(class="rating-stars-bottom")
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                            span ★
+                                                    div(class="rating-count")
+                                                        span 38
+                                                        span reviews
+                                                div(class="col-xs-6")
+                                                    span(class="item-Licensed-for pull-right") Licensed for 18 years
+                                            div(class="row")
+                                                div(class="col-xs-6")
+                                                    span(class="item-firm") The Nydia N Streets Law Firm
+                                                    span  
+                                                    span(class="item-firm-place") Miami, FL   
+                                            div(class="row")
+                                                div(class="col-xs-12")
+                                                    p(class="item-practice-area") Divorce and separation, Family, Child custody, Child support...
+                                            div(class="row")
+                                                div(class="col-xs-12 item-actions")
+                                                    a(href="" class="col-xs-4")
+                                                        i(class="fa fa-phone" aria-hidden="true")
+                                                        span (305) 912-9810
+                                                    a(href="" class="col-xs-4")
+                                                        i(class="fa fa-envelope" aria-hidden="true")
+                                                        span Email
+                                                    a(href="" class="col-xs-4")
+                                                        i(class="fa fa-globe" aria-hidden="true")
+                                                        span WebSite
+                    div(class="col-xs-12 col-sm-4 col-md-4 col-lg-4 side-result")
+    append footer
+        include ./2.includes/footer
+    append scripts
+        script(src="/src/js/nav.js")

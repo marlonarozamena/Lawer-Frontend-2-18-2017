@@ -164,13 +164,12 @@ $(document).ready(function() {
      });
      $('.mobile-nav-menu .panel-collapse').on('hide.bs.collapse', function () {
          var heading_element = $(this).attr("aria-labelledby");
-         var span_element = $("#"+heading_element+" span.open-or-close-icon");
+         var span_element = $("#"+heading_element+" i.open-or-close-icon");
          span_element.removeClass("glyphicon-minus").addClass("glyphicon-plus");
     });
     $('.mobile-nav-menu .panel-collapse').on('show.bs.collapse', function () {
          var heading_element = $(this).attr("aria-labelledby");
-         var span_element = $("#"+heading_element+" span.open-or-close-icon");
+         var span_element = $("#"+heading_element+" i.open-or-close-icon");
          span_element.removeClass("glyphicon-plus").addClass("glyphicon-minus");
-    })
-   
+    })   
 })

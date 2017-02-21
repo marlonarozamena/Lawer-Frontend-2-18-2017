@@ -1,3 +1,5 @@
+//TODO: Refactorizar el uso de los colores, cambiar las variables a las variables de bootstrap.
+
 $base:#fff;
 $nav-text-color:#000;
 $nav-menu-back-color:#fff;
@@ -25,7 +27,11 @@ $home-how-work-section-icon-color:#ed9b40;
 $home-homeowners-favorites-background:#fff;
 $home-homeowners-favorites-color:#000;
 $home-how-work-section-links-color: #2196f3;
-
+//Search Result
+$result-item-border-color: #cccccc;
+$result-item-name-color: #292c32;
+$result-item-link-color: #2196f3;
+$result-item-alternative-color: #ed9b40;
 
 //footer
 $footer-top-background: #292c32;
@@ -36,5 +42,3 @@ $footer-down-background: #353e44;
 $footer-down-color: #ffffff;
 $footer-down-right-color: #dddddd;
 $footer-down-right-links-color: #61c9a8;
-
-

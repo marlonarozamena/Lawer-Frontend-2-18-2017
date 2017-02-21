@@ -39,6 +39,9 @@
 body {
   background: #fff; }
 
+.sections-wrapper {
+  margin-top: 73px; }
+
 .multiselect-container.dropdown-menu {
   width: 100%; }
 
@@ -104,11 +107,11 @@ h1.title {
   font-size: 1.3em; }
 
 .btn-primary {
-  border-radius: 0;
-  background: #61c9a8;
-  font-size: 1.1em;
-  color: #fff;
-  border: 1px solid #61c9a8; }
+  border-radius: 0 !important;
+  background: #61c9a8 !important;
+  font-size: 1.1em !important;
+  color: #fff !important;
+  border: 1px solid #61c9a8 !important; }
 
 .btn-primary.navbar-buttom {
   border-radius: 0 !important;
@@ -132,9 +135,9 @@ h1.title {
   border: 1px solid #61c9a8 !important; }
 
 .btn-primary:hover {
-  background: #fff;
-  color: #61c9a8;
-  border: 1px solid #61c9a8; }
+  background: #fff !important;
+  color: #61c9a8 !important;
+  border: 1px solid #61c9a8 !important; }
 
 .btn-primary.navbar-buttom-inverse:hover {
   background: #61c9a8 !important;
@@ -152,49 +155,49 @@ h1.title {
   border: 1px solid #61c9a8 !important; }
 
 .btn-primary-inverse {
-  border-radius: 0;
-  background: #fff;
-  color: #61c9a8;
-  border: 1px solid #61c9a8;
-  font-size: 1.1em; }
+  border-radius: 0 !important;
+  background: #fff !important;
+  color: #61c9a8 !important;
+  border: 1px solid #61c9a8 !important;
+  font-size: 1.1em !important; }
 
 .btn-primary-inverse:hover {
-  background: #61c9a8;
-  color: #fff;
-  border: 1px solid #fff; }
+  background: #61c9a8 !important;
+  color: #fff !important;
+  border: 1px solid #fff !important; }
 
 .btn-primary-transparent {
-  border-radius: 0;
-  font-size: 1.1em;
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff; }
+  border-radius: 0 !important;
+  font-size: 1.1em !important;
+  background: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff !important; }
 
 .btn-primary-transparent:hover {
-  background: #fff;
-  border: 1px solid #61c9a8;
-  color: #61c9a8; }
+  background: #fff !important;
+  border: 1px solid #61c9a8 !important;
+  color: #61c9a8 !important; }
 
 .btn-lg {
-  font-size: 1.2em;
-  padding: 13px 40px; }
+  font-size: 1.2em !important;
+  padding: 13px 40px !important; }
 
 .btn-md {
-  font-size: 1.1em;
-  padding: 8px 40px; }
+  font-size: 1.1em !important;
+  padding: 8px 40px !important; }
 
 .btn-sm {
-  font-size: 1.1em;
-  padding: 8px 10px; }
+  font-size: 1.1em !important;
+  padding: 8px 10px !important; }
 
 .btn-sm.navbar-buttom, .btn-sm.navbar-buttom-inverse, .btn-sm.navbar-buttom-alternative {
   font-size: 0.9em !important;
   padding: 9px 5px !important;
-  font-weight: bold; }
+  font-weight: bold !important; }
 
 .btn-xs {
-  font-size: 1em;
-  padding: 5px 15px; }
+  font-size: 1em !important;
+  padding: 5px 15px !important; }
 
 .hidden {
   display: none !important; }

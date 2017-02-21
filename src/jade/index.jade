@@ -1,11 +1,11 @@
 extend ./1.base/base.jade
 
-append stylesheet         
-    link(href="/src/css/1.base/navwithoutsearch.css", rel="stylesheet")
+append stylesheet    
     link(href="/src/css/2.home/style.css", rel="stylesheet")
 block content
     block nav
         include ./2.includes/navwithoutsearch
+        
     append sections
         div(class="carousel slide" id="search-section" data-ride="carousel")
             div(class="elements-background")

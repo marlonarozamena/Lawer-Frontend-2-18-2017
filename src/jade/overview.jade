@@ -1,0 +1,25 @@
+extend ./1.base/base.jade
+append stylesheet    
+    link(href="/src/css/4.overview/overviewlg.css", rel="stylesheet", media="screen and (min-width: 1200px)")
+block content
+    block nav
+        include ./2.includes/navwithoutsearch
+    div(class="sections-wrapper")
+        append sections            
+            div(id="member-overview" class="container")
+                div(class="row overview-cover")
+                    div(class="col-xs-12 col-sm-4 col-md-3 col-lg-3 member-img")
+                        img(class="img-responsive" src="/Content/template/images/lawyer/lawyer2img.jpg")
+                    div(class="col-xs-12 col-sm-8 col-md-9 col-lg-9 general-information")
+                        div(class="row")
+                            div(class="col-xs-12")
+                                h1(class="member-name") Kathryn Halmilton
+                        div(class="row")
+                            div(class="col-xs-12")
+                                h3(class="item-name") Kathryn Halmilton
+
+
+    append footer
+        include ./2.includes/footer
+    append scripts
+        script(src="/src/js/nav.js")

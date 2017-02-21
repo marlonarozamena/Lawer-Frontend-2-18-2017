@@ -7,6 +7,9 @@ $section-margin-top:50px;
 body{
     background: $base;
 }
+.sections-wrapper{
+    margin-top: 73px;
+}
 .multiselect-container.dropdown-menu{
     width: 100%;
 }
@@ -73,11 +76,11 @@ h1.title{
 }
 
 .btn-primary{
-    border-radius: 0;
-    background: $primary-button-background;
-    font-size: 1.1em;    
-    color: $primary-button-color;
-    border: 1px solid $primary-button-background;
+    border-radius: 0!important;
+    background: $primary-button-background!important;
+    font-size: 1.1em!important;    
+    color: $primary-button-color!important;
+    border: 1px solid $primary-button-background!important;
 }
 .btn-primary.navbar-buttom{
     border-radius: 0!important;
@@ -101,9 +104,9 @@ h1.title{
     border: 1px solid $inverse-primary-button-color!important;
 }
 .btn-primary:hover{    
-    background: $inverse-primary-button-background;
-    color: $inverse-primary-button-color;
-    border: 1px solid $inverse-primary-button-color;
+    background: $inverse-primary-button-background!important;
+    color: $inverse-primary-button-color!important;
+    border: 1px solid $inverse-primary-button-color!important;
 }
 .btn-primary.navbar-buttom-inverse:hover{    
     background: $primary-button-background!important;
@@ -121,51 +124,51 @@ h1.title{
     border: 1px solid $inverse-primary-button-color!important;
 }
 .btn-primary-inverse{
-    border-radius: 0;
-    background: $inverse-primary-button-background;
-    color: $inverse-primary-button-color;
-    border: 1px solid $inverse-primary-button-color;
-    font-size: 1.1em;
+    border-radius: 0!important;
+    background: $inverse-primary-button-background!important;
+    color: $inverse-primary-button-color!important;
+    border: 1px solid $inverse-primary-button-color!important;
+    font-size: 1.1em!important;
       
 }
 .btn-primary-inverse:hover{
-    background: $primary-button-background;
-    color: $primary-button-color;
-    border: 1px solid $primary-button-color;
+    background: $primary-button-background!important;
+    color: $primary-button-color!important;
+    border: 1px solid $primary-button-color!important;
 }
 .btn-primary-transparent{
-    border-radius: 0;
-    font-size: 1.1em;    
-    background: transparent;
-    border: 1px solid $primary-transparent-buttom-color;
-    color: $primary-transparent-buttom-color;
+    border-radius: 0!important;
+    font-size: 1.1em!important;    
+    background: transparent!important;
+    border: 1px solid $primary-transparent-buttom-color!important;
+    color: $primary-transparent-buttom-color!important;
 }
 .btn-primary-transparent:hover{
-    background: $inverse-primary-button-background;
-    border: 1px solid $primary-button-background;
-    color: $primary-button-background;
+    background: $inverse-primary-button-background!important;
+    border: 1px solid $primary-button-background!important;
+    color: $primary-button-background!important;
 }
 .btn-lg {
-    font-size: 1.2em;
-    padding: 13px 40px;
+    font-size: 1.2em!important;
+    padding: 13px 40px!important;
 }
 .btn-md{
-    font-size: 1.1em;
-    padding: 8px 40px;
+    font-size: 1.1em!important;
+    padding: 8px 40px!important;
 }
 .btn-sm{
-    font-size: 1.1em;
-    padding: 8px 10px;
+    font-size: 1.1em!important;
+    padding: 8px 10px!important;
 }
 .btn-sm.navbar-buttom, .btn-sm.navbar-buttom-inverse, .btn-sm.navbar-buttom-alternative{
     font-size: .9em!important;
     padding: 9px 5px!important;
-    font-weight: bold;
+    font-weight: bold!important;
 }
 
 .btn-xs{
-    font-size: 1em;
-    padding: 5px 15px;
+    font-size: 1em!important;
+    padding: 5px 15px!important;
 }
 .hidden{
     display : none!important;

@@ -1,0 +1,129 @@
+@import "search.scss";
+@media (min-width: 1200px) {
+$input-height: 40px;
+body{
+    h3{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .search-section{
+        padding: 10px 0;
+        .form-container{
+            background-color: #eeeeee;
+            text-align: center
+        }
+        .form-inline{
+                display: inline-block;
+            .form-group:last-child{
+                margin-bottom: 0;
+            }
+            padding: 12px 0;                    
+            
+            .search-criteria{            
+                width: 360px!important;
+                height: $input-height;
+                border-radius: 0!important;
+                
+            }
+            .search-where{
+                width: 100%;
+                height: $input-height;
+            }
+            .input-group-btn button {
+                height: $input-height;
+                i{
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+    }
+    .result-headline{
+        font-size: 2em;
+        .badge{
+            margin-left: 5px;            
+        }
+    }
+    .rating-stars{
+        display: inline-block;
+        color: #ddd;
+        font-size: 1.5em;
+        .rating-stars-top{
+            color: #d9a11a;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            display: block;
+            left: 0px !important;
+            overflow: hidden;
+        }
+        .rating-stars-bottom{
+              z-index: 0;
+        }
+    }
+    .rating-count{
+        display: inline-block;
+        span{
+            margin-left: 2px;
+        }
+    }    
+    .result-item{
+        border-top: 1px solid $result-item-border-color;
+        padding: 10px 0;
+        .item-practice-area{
+            margin: 7px 0;
+        }
+        .item-img{
+            .img-link{
+                position: relative;
+                width: 100%;
+                min-height: 100px;
+                max-height: 133px;
+                overflow: hidden;
+                img{
+                    display: block;
+                    position: absolute;
+                    margin: auto;
+                    width: auto;
+                    height: auto;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        .item-name{
+            a{
+                font-family: "SourceSansPro-Semibold";
+                text-decoration: none;
+                font-size: .9em;
+                color: $result-item-name-color;
+            }
+        }
+        .is-sponsored{
+            color: $result-item-alternative-color;
+        }
+        .item-firm-place{
+            font-weight: 600;
+        }
+        .item-actions{
+            a{
+                 color: $result-item-link-color;
+                 
+                 span{
+                     margin-left: 4px;
+                     font-size: 1.2em;
+                 }
+            }
+           
+        }
+        
+       
+
+    }
+
+}
+
+ 
+}
