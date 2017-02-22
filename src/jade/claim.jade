@@ -1,0 +1,136 @@
+extend ./1.base/base.jade
+append stylesheet
+    link(href="/src/css/5.claim/claimlg.css", rel="stylesheet", media="screen and (min-width: 1200px)")
+
+block content
+    block nav
+        include ./2.includes/navwithoutsearch
+    div(class="sections-wrapper")
+        append sections
+            div(class="search-section-container")   
+                div(class="container-fluid")
+                    div(class="row search-section")
+                        div(class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-container")
+                            include ./2.includes/claimsearch  
+            div(class="container")     
+                div(class="row headline")
+                    div(class="col-xs-12")
+                        h1(class="result-headline")
+                            | Claim your Lawyer Directory Profile                            
+                        h1(class="no-result-headline")
+                div(class="row")
+                    div(class="col-xs-12 col-sm-8 col-md-8 col-lg-8 result")                    
+                        div(class="row claim-listing")
+                            div(class="col-xs-12")
+                                each _ in Array(2)
+                                    div(class="row result-item")
+                                        div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 item-img")
+                                            a(class="img-link" href="")
+                                                img(class="img-responsive" src="/Content/template/images/lawyer/lawyer1img.jpg")
+                                        div(class="col-xs-12 col-sm-10 col-md-10 col-lg-10 item-content")
+                                            div(class="row")
+                                                div(class="col-xs-8")
+                                                    h3(class="item-name") 
+                                                        a(href="") Nydia N Streets   
+                                            div(class="row")    
+                                                div(class="col-xs-8")                         
+                                                    div(class="row licensed")
+                                                        div(class="col-xs-12")                                
+                                                            i(class="fa fa-briefcase" aria-hidden="true")
+                                                            span(class="item-Licensed-for") Licensed for 18 years   
+                                                    div(class="row firm")
+                                                        div(class="col-xs-12")
+                                                            i(class="fa fa-balance-scale" aria-hidden="true")
+                                                            span(class="item-firm") The Nydia N Streets Law Firm                                                                     
+                                                    div(class="row location")
+                                                        div(class="col-xs-12 ") 
+                                                            i(class="fa fa-map-marker" aria-hidden="true")
+                                                            span(class="item-firm-place") Miami, FL    
+                                                div(class="col-xs-4")   
+                                                    a(class="btn btn-primary btn-sm"  type="button") Claim this Profile
+                                each _ in Array(1)
+                                    div(class="row result-item")
+                                        div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 item-img")
+                                            a(class="img-link" href="")
+                                                img(class="img-responsive" src="/Content/template/images/lawyer/lawyer1img.jpg")
+                                        div(class="col-xs-12 col-sm-10 col-md-10 col-lg-10 item-content")
+                                            div(class="row")
+                                                div(class="col-xs-8")
+                                                    h3(class="item-name") 
+                                                        a(href="") Nydia N Streets   
+                                            div(class="row")    
+                                                div(class="col-xs-8")                         
+                                                    div(class="row licensed")
+                                                        div(class="col-xs-12")                                
+                                                            i(class="fa fa-briefcase" aria-hidden="true")
+                                                            span(class="item-Licensed-for") Licensed for 18 years   
+                                                    div(class="row firm")
+                                                        div(class="col-xs-12")
+                                                            i(class="fa fa-balance-scale" aria-hidden="true")
+                                                            span(class="item-firm") The Nydia N Streets Law Firm                                                                     
+                                                    div(class="row location")
+                                                        div(class="col-xs-12 ") 
+                                                            i(class="fa fa-map-marker" aria-hidden="true")
+                                                            span(class="item-firm-place") Miami, FL   
+                                                    div(class="row")
+                                                        div(class="col-xs-12 ") 
+                                                            span(class="label label-info") Profile already Claimed
+                                each _ in Array(3)
+                                    div(class="row result-item")
+                                        div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 item-img")
+                                            a(class="img-link" href="")
+                                                img(class="img-responsive" src="/Content/template/images/lawyer/lawyer1img.jpg")
+                                        div(class="col-xs-12 col-sm-10 col-md-10 col-lg-10 item-content")
+                                            div(class="row")
+                                                div(class="col-xs-8")
+                                                    h3(class="item-name") 
+                                                        a(href="") Nydia N Streets   
+                                            div(class="row")    
+                                                div(class="col-xs-8")                         
+                                                    div(class="row licensed")
+                                                        div(class="col-xs-12")                                
+                                                            i(class="fa fa-briefcase" aria-hidden="true")
+                                                            span(class="item-Licensed-for") Licensed for 18 years   
+                                                    div(class="row firm")
+                                                        div(class="col-xs-12")
+                                                            i(class="fa fa-balance-scale" aria-hidden="true")
+                                                            span(class="item-firm") The Nydia N Streets Law Firm                                                                     
+                                                    div(class="row location")
+                                                        div(class="col-xs-12 ") 
+                                                            i(class="fa fa-map-marker" aria-hidden="true")
+                                                            span(class="item-firm-place") Miami, FL    
+                                                div(class="col-xs-4")   
+                                                    a(class="btn btn-primary btn-sm"  type="button") Claim this Profile
+                                each _ in Array(5)
+                                    div(class="row result-item")
+                                        div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 item-img")
+                                            a(class="img-link" href="")
+                                                img(class="img-responsive" src="/Content/template/images/lawyer/lawyer1img.jpg")
+                                        div(class="col-xs-12 col-sm-10 col-md-10 col-lg-10 item-content")
+                                            div(class="row")
+                                                div(class="col-xs-8")
+                                                    h3(class="item-name") 
+                                                        a(href="") Nydia N Streets   
+                                            div(class="row")    
+                                                div(class="col-xs-8")                         
+                                                    div(class="row licensed")
+                                                        div(class="col-xs-12")                                
+                                                            i(class="fa fa-briefcase" aria-hidden="true")
+                                                            span(class="item-Licensed-for") Licensed for 18 years   
+                                                    div(class="row firm")
+                                                        div(class="col-xs-12")
+                                                            i(class="fa fa-balance-scale" aria-hidden="true")
+                                                            span(class="item-firm") The Nydia N Streets Law Firm                                                                     
+                                                    div(class="row location")
+                                                        div(class="col-xs-12 ") 
+                                                            i(class="fa fa-map-marker" aria-hidden="true")
+                                                            span(class="item-firm-place") Miami, FL    
+                                                    div(class="row")
+                                                        div(class="col-xs-12 ") 
+                                                            span(class="label label-info") Profile already Claimed
+                                               
+                    div(class="col-xs-12 col-sm-4 col-md-4 col-lg-4 side-result")
+    append footer
+        include ./2.includes/footer
+    append scripts
+        script(src="/src/js/nav.js")

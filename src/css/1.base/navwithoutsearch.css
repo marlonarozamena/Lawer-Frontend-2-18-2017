@@ -2,7 +2,7 @@
 @import url(searchform.css);
 @import url(login.css);
 .navbar {
-  background: #fff;
+  background: #fff !important;
   /*#btn-search-small-project{
         display: inline-block;
     } 

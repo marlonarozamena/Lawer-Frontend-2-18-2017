@@ -4587,4 +4587,138 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+@media (min-width: 1200px) {
+  h1 {
+    margin: 0 0 4px 0;
+    font-size: 2.5em;
+    font-family: "SourceSansPro-semibold"; }
+  .search-section {
+    padding: 0 0 10px 0; }
+    .search-section .form-container {
+      background-color: #eeeeee;
+      text-align: center; }
+    .search-section .form-inline {
+      display: inline-block;
+      padding: 12px 0; }
+      .search-section .form-inline .form-group:last-child {
+        margin-bottom: 0; }
+      .search-section .form-inline .search-criteria {
+        width: 560px !important;
+        height: 40px;
+        border-radius: 0 !important; }
+      .search-section .form-inline .search-where {
+        width: 100%;
+        height: 40px; }
+      .search-section .form-inline .input-group-btn button {
+        height: 40px; }
+        .search-section .form-inline .input-group-btn button i {
+          font-size: 1.5em; }
+  .section-title {
+    font-family: "SourceSansPro-semibold";
+    font-size: 2em !important;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px; }
+  .section-subtitle {
+    font-family: "SourceSansPro-semibold";
+    font-size: 1.3em !important;
+    padding-bottom: 5px; }
+  .review-item {
+    padding: 20px 0; }
+    .review-item .user-information-item {
+      display: block; }
+    .review-item .review-user-name {
+      font-family: "SourceSansPro-semibold";
+      font-size: 1.2em; }
+  .item-Licensed-for {
+    margin-top: 3px !important;
+    display: inline-block !important; }
+  .compound-link {
+    text-decoration: none !important; }
+    .compound-link span, .compound-link i {
+      margin-right: 3px; }
+    .compound-link i {
+      font-size: 0.8em !important; }
+  .item-actions {
+    margin-top: 10px; }
+    .item-actions i {
+      font-size: 1.3em; }
+    .item-actions a {
+      color: #2196f3;
+      padding: 0; }
+      .item-actions a span {
+        margin-left: 4px;
+        font-size: 1.2em; }
+  .rating-stars {
+    display: inline-block;
+    color: #ddd;
+    font-size: 1.5em; }
+    .rating-stars .rating-stars-top {
+      color: #d9a11a;
+      padding: 0;
+      position: absolute;
+      z-index: 1;
+      display: block;
+      left: 0px !important;
+      overflow: hidden; }
+    .rating-stars .rating-stars-bottom {
+      z-index: 0; }
+  .rating-count {
+    display: inline-block; }
+    .rating-count span {
+      margin-left: 2px; }
+  .member-overview {
+    margin-top: 15px; }
+    .member-overview .member-img .img-link {
+      display: block;
+      position: relative;
+      width: 100%;
+      min-height: 160px;
+      max-height: 180px;
+      overflow: hidden; }
+      .member-overview .member-img .img-link img {
+        display: block;
+        position: absolute;
+        margin: auto;
+        width: auto;
+        height: auto; }
+    .member-overview .general-information .item-actions, .member-overview .general-information .licensed, .member-overview .general-information .firm, .member-overview .general-information .location {
+      margin-top: 5px; }
+    .member-overview .general-information .licensed i, .member-overview .general-information .firm i, .member-overview .general-information .location i {
+      display: inline-block;
+      margin-right: 4px;
+      color: #ed9b40;
+      font-size: 1em; }
+    .member-overview .overview-practice-areas {
+      padding: 10px 0; }
+      .member-overview .overview-practice-areas .practice-area-tags .label {
+        display: inline-block;
+        padding: .2em .6em .3em;
+        font-size: 1em;
+        font-family: "SourceSansPro-light";
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 0 !important;
+        margin-right: 1px; }
+    .member-overview .overview-review .review-actions-container {
+      text-align: center;
+      margin-bottom: 20px; }
+      .member-overview .overview-review .review-actions-container .review-actions {
+        display: inline;
+        margin: 0 auto; }
+        .member-overview .overview-review .review-actions-container .review-actions .make-review {
+          display: block;
+          margin-bottom: 10px; }
+    .member-overview .contact-info .item-actions a {
+      padding: 5px 0; }
+    .member-overview .overview-videos .thumbnail .play {
+      color: #ffffff !important;
+      font-size: 3em;
+      position: absolute;
+      left: 45%;
+      top: 35%; } }
+
 /*# sourceMappingURL=../../maps/4.overview/overviewlg.css.map */

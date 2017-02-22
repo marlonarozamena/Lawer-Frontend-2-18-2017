@@ -4,7 +4,7 @@
 @import "searchform.css";
 @import "login.css";
 .navbar{
-    background: $nav-back-color;
+    background: $nav-back-color!important;
     //Temporar
     .navbar-brand{
         span{

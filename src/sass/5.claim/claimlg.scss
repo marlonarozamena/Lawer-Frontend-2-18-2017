@@ -1,4 +1,4 @@
-@import "search.scss";
+@import "claim.scss";
 @media (min-width: 1200px) {
 $input-height: 40px;
 body{
@@ -44,36 +44,40 @@ body{
         .badge{
             margin-left: 5px;            
         }
-    }
-    .rating-stars{
-        display: inline-block;
-        color: #ddd;
-        font-size: 1.5em;
-        .rating-stars-top{
-            color: #d9a11a;
-            padding: 0;
-            position: absolute;
-            z-index: 1;
-            display: block;
-            left: 0px !important;
-            overflow: hidden;
-        }
-        .rating-stars-bottom{
-              z-index: 0;
-        }
-    }
-    .rating-count{
-        display: inline-block;
-        span{
-            margin-left: 2px;
-        }
-    }    
+    }  
     .result-item{
         border-top: 1px solid $result-item-border-color;
         padding: 10px 0;
-        .item-practice-area{
-            margin: 7px 0;
+        .label {
+            display: inline-block;
+            padding: .2em .6em .3em;
+            font-size: 1em;
+            font-family: "SourceSansPro-semibold";
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0 !important;
+           
         }
+         .licensed, .firm,  .location{
+                margin-top: 5px;
+            }
+            .location{
+                margin-bottom: 5px;
+            }
+            .licensed, .firm,  .location{
+                
+                i{
+                    display: inline-block;
+                    margin-right: 4px;
+                    color: #ed9b40;
+                    font-size:1em;
+                }
+
+            }
+
         .item-img{
             .img-link{
                 display: block;
@@ -108,20 +112,7 @@ body{
         }
         .item-firm-place{
             font-weight: 600;
-        }
-        .item-actions{
-            a{
-                 color: $result-item-link-color;
-                 
-                 span{
-                     margin-left: 4px;
-                     font-size: 1.2em;
-                 }
-            }
-           
-        }
-        
-       
+        }      
 
     }
 

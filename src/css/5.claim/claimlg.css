@@ -4618,29 +4618,29 @@ button.close {
     font-size: 2em; }
     .result-headline .badge {
       margin-left: 5px; }
-  .rating-stars {
-    display: inline-block;
-    color: #ddd;
-    font-size: 1.5em; }
-    .rating-stars .rating-stars-top {
-      color: #d9a11a;
-      padding: 0;
-      position: absolute;
-      z-index: 1;
-      display: block;
-      left: 0px !important;
-      overflow: hidden; }
-    .rating-stars .rating-stars-bottom {
-      z-index: 0; }
-  .rating-count {
-    display: inline-block; }
-    .rating-count span {
-      margin-left: 2px; }
   .result-item {
     border-top: 1px solid #cccccc;
     padding: 10px 0; }
-    .result-item .item-practice-area {
-      margin: 7px 0; }
+    .result-item .label {
+      display: inline-block;
+      padding: .2em .6em .3em;
+      font-size: 1em;
+      font-family: "SourceSansPro-semibold";
+      line-height: 1;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 0 !important; }
+    .result-item .licensed, .result-item .firm, .result-item .location {
+      margin-top: 5px; }
+    .result-item .location {
+      margin-bottom: 5px; }
+    .result-item .licensed i, .result-item .firm i, .result-item .location i {
+      display: inline-block;
+      margin-right: 4px;
+      color: #ed9b40;
+      font-size: 1em; }
     .result-item .item-img .img-link {
       display: block;
       position: relative;
@@ -4666,11 +4666,6 @@ button.close {
     .result-item .is-sponsored {
       color: #ed9b40; }
     .result-item .item-firm-place {
-      font-weight: 600; }
-    .result-item .item-actions a {
-      color: #2196f3; }
-      .result-item .item-actions a span {
-        margin-left: 4px;
-        font-size: 1.2em; } }
+      font-weight: 600; } }
 
-/*# sourceMappingURL=../../maps/3.search/searchlg.css.map */
+/*# sourceMappingURL=../../maps/5.claim/claimlg.css.map */

@@ -190,10 +190,31 @@
       </div>
     </nav>
     <div class="sections-wrapper">
-      <div id="member-overview" class="container">
+      <div class="search-section-container">  
+        <div class="container-fluid">
+          <div class="row search-section">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-container">
+              <form class="form-inline">
+                <div class="form-group">
+                  <label for="search-criteria" class="sr-only"></label>
+                  <input type="text" name="search" placeholder="Search: Business, Lawyer Name, or Practice Area" class="form-control search-criteria">
+                </div>
+                <div class="form-group">
+                  <div class="input-group">           <span class="input-group-btn">
+                      <button type="button" onclick="populateLocation()" class="btn btn-default"><i class="fa fa-map-marker">           </i></button></span>
+                    <input type="text" name="where" placeholder="City or ZipCode" class="form-control search-where"><span class="input-group-btn">
+                      <button type="submit" class="btn btn-default btn-search-style btn-search-small"><i class="fa fa-search"></i></button></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container member-overview">              
         <div class="row overview-cover">
-          <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 member-img"><img src="/Content/template/images/lawyer/lawyer2img.jpg" class="img-responsive"></div>
-          <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 general-information">
+          <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 member-img"><a href="" class="img-link"><img src="/Content/template/images/lawyer/lawyer2img.jpg" class="img-responsive"></a></div>
+          <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 general-information">
             <div class="row">
               <div class="col-xs-12">
                 <h1 class="member-name">Kathryn Halmilton</h1>
@@ -201,8 +222,153 @@
             </div>
             <div class="row">
               <div class="col-xs-12">
-                <h3 class="item-name">Kathryn Halmilton</h3>
+                <div class="rating-stars">
+                  <div style="width: 0%" class="rating-stars-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="rating-stars-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+                <div class="rating-count"><a href="" class="compound-link"><span>38</span><span>reviews</span><i aria-hidden="true" class="fa fa-chevron-right"></i></a></div>
               </div>
+            </div>
+            <div class="row licensed">
+              <div class="col-xs-12">                               <i aria-hidden="true" class="fa fa-briefcase"></i><span class="item-Licensed-for">Licensed for 18 years   </span></div>
+            </div>
+            <div class="row firm">
+              <div class="col-xs-12"><i aria-hidden="true" class="fa fa-balance-scale"></i><span class="item-firm">The Nydia N Streets Law Firm                                                                     </span></div>
+            </div>
+            <div class="row location">
+              <div class="col-xs-12 "> <i aria-hidden="true" class="fa fa-map-marker"></i><span class="item-firm-place">Miami, FL      </span></div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 item-actions"><a href="" class="col-xs-4"><i aria-hidden="true" class="fa fa-phone"></i><span>(305) 912-9810</span></a><a href="" class="col-xs-4"><i aria-hidden="true" class="fa fa-envelope"></i><span>Email</span></a><a href="" class="col-xs-4"><i aria-hidden="true" class="fa fa-globe"></i><span>WebSite                                    </span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="row overview-practice-areas">
+          <div class="col-xs-12">
+            <h2 class="section-title">Practice Areas</h2>
+            <div class="practice-area-tags"><span class="label label-success">Family</span><span class="label label-success">Divorce and separation</span><span class="label label-success">Child custody</span><span class="label label-success">Child support</span><span class="label label-success">Domestic violence</span><span class="label label-success">Marriage and prenuptials</span></div>
+          </div>
+        </div>
+        <div class="row overview-about-me">
+          <div class="col-xs-12">
+            <h2 class="section-title">About me</h2>
+            <div class="about-me-text-container">
+              <p>Dedicated to helping clients in family law matters for over 37 years. Top rated "AV Preeminent" for highest level of professional excellence as reviewed by his peers in Martindale-Hubbell®; "Top Rated Lawyer in Family Law for Ethical Standards and Legal Ability" in Martindale-Hubbell®; Highest Rating of 5.0/5.0 in Martindale-Hubbell® Client Review Ratings™; Highest Rating of 10.0 "Superb" on Avvo.Com;  42 endorsements by lawyers in Avvo.com; Rated "Excellent" on LawyerRatingz.com; Rated 5 out of 5 stars on Lawlink; "10 Best Award in Client Satisfaction" (American Institute of Family Law Attorneys); Top 100 Lawyers (The American Society of Legal Advocates); Rated 5 out of 5 stars on Merchantcircle.com; Rated A+ by the Better Business Bureau.</p>
+            </div>
+            <div class="language-spoken">
+              <h3 class="section-subtitle">Languages: </h3>
+              <p><span>Spanish,                                 </span><span>English                </span></p>
+            </div>
+          </div>
+        </div>
+        <div class="row overview-review">
+          <div class="col-xs-12">
+            <h2 class="section-title">Reviews</h2>
+            <div class="row">
+              <div class="col-xs-12 review-actions-container">
+                <div class="review-actions">
+                  <div class="make-review"><a type="button" class="btn btn-primary-inverse  btn-lg">Make a Review</a></div>
+                  <div class="rating-stars">
+                    <div style="width: 0%" class="rating-stars-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    <div class="rating-stars-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★                                    </span></div>
+                  </div>
+                  <div class="rating-count"><a href="" class="compound-link"><span>38</span><span>reviews</span><i aria-hidden="true" class="fa fa-chevron-right"></i></a></div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2 reviews-container">
+                <div class="row review-item">
+                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 user-information"><span class="review-user-name user-information-item">Juana Perez</span>
+                    <div class="rating-stars user-information-item">
+                      <div style="width: 0%" class="rating-stars-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="rating-stars-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div><span class="review-time user-information-item">February 29, 2016</span>
+                  </div>
+                  <div class="col-lg-10 col-md-12 col-sm-10 col-xs-12 review-information">
+                    <p class="review-text">After consulting various lawyers, I met with Mr. Schwartz in early 2012 to discuss my divorce case. From the initial consultation I knew that he was the one lawyer that I could trust to handle my case as if it was his own. He took the time to listen to my case and did not made feel judged at any point in time.</p>Throught out the entire process, Mr. Schwartz was always available day or night even when he was out of town for a family emergency. Despite the complexity of my case (and how difficult my ex behaved thru the entire process) Mr. Schwartz was my sanity clause. His extensive experience in the Family law field allows him to foresee issues and come up with effective solutions.
+                  </div>
+                </div>
+                <div class="row review-item">
+                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 user-information"><span class="review-user-name user-information-item">Juana Perez</span>
+                    <div class="rating-stars user-information-item">
+                      <div style="width: 0%" class="rating-stars-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="rating-stars-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div><span class="review-time user-information-item">February 29, 2016</span>
+                  </div>
+                  <div class="col-lg-10 col-md-12 col-sm-10 col-xs-12 review-information">
+                    <p class="review-text">After consulting various lawyers, I met with Mr. Schwartz in early 2012 to discuss my divorce case. From the initial consultation I knew that he was the one lawyer that I could trust to handle my case as if it was his own. He took the time to listen to my case and did not made feel judged at any point in time.</p>Throught out the entire process, Mr. Schwartz was always available day or night even when he was out of town for a family emergency. Despite the complexity of my case (and how difficult my ex behaved thru the entire process) Mr. Schwartz was my sanity clause. His extensive experience in the Family law field allows him to foresee issues and come up with effective solutions.
+                  </div>
+                </div>
+                <div class="row review-item">
+                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 user-information"><span class="review-user-name user-information-item">Juana Perez</span>
+                    <div class="rating-stars user-information-item">
+                      <div style="width: 0%" class="rating-stars-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="rating-stars-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div><span class="review-time user-information-item">February 29, 2016</span>
+                  </div>
+                  <div class="col-lg-10 col-md-12 col-sm-10 col-xs-12 review-information">
+                    <p class="review-text">After consulting various lawyers, I met with Mr. Schwartz in early 2012 to discuss my divorce case. From the initial consultation I knew that he was the one lawyer that I could trust to handle my case as if it was his own. He took the time to listen to my case and did not made feel judged at any point in time.</p>Throught out the entire process, Mr. Schwartz was always available day or night even when he was out of town for a family emergency. Despite the complexity of my case (and how difficult my ex behaved thru the entire process) Mr. Schwartz was my sanity clause. His extensive experience in the Family law field allows him to foresee issues and come up with effective solutions.
+                  </div>
+                </div>
+                <div class="row review-item">
+                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 user-information"><span class="review-user-name user-information-item">Juana Perez</span>
+                    <div class="rating-stars user-information-item">
+                      <div style="width: 0%" class="rating-stars-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="rating-stars-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div><span class="review-time user-information-item">February 29, 2016</span>
+                  </div>
+                  <div class="col-lg-10 col-md-12 col-sm-10 col-xs-12 review-information">
+                    <p class="review-text">After consulting various lawyers, I met with Mr. Schwartz in early 2012 to discuss my divorce case. From the initial consultation I knew that he was the one lawyer that I could trust to handle my case as if it was his own. He took the time to listen to my case and did not made feel judged at any point in time.</p>Throught out the entire process, Mr. Schwartz was always available day or night even when he was out of town for a family emergency. Despite the complexity of my case (and how difficult my ex behaved thru the entire process) Mr. Schwartz was my sanity clause. His extensive experience in the Family law field allows him to foresee issues and come up with effective solutions.
+                  </div>
+                </div>
+                <div class="row review-item">
+                  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 user-information"><span class="review-user-name user-information-item">Juana Perez</span>
+                    <div class="rating-stars user-information-item">
+                      <div style="width: 0%" class="rating-stars-top"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                      <div class="rating-stars-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                    </div><span class="review-time user-information-item">February 29, 2016</span>
+                  </div>
+                  <div class="col-lg-10 col-md-12 col-sm-10 col-xs-12 review-information">
+                    <p class="review-text">After consulting various lawyers, I met with Mr. Schwartz in early 2012 to discuss my divorce case. From the initial consultation I knew that he was the one lawyer that I could trust to handle my case as if it was his own. He took the time to listen to my case and did not made feel judged at any point in time.</p>Throught out the entire process, Mr. Schwartz was always available day or night even when he was out of town for a family emergency. Despite the complexity of my case (and how difficult my ex behaved thru the entire process) Mr. Schwartz was my sanity clause. His extensive experience in the Family law field allows him to foresee issues and come up with effective solutions.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row overview-contact-info">
+          <div class="col-xs-12">
+            <h2 class="section-title">Contact info</h2>
+          </div>
+          <div class="col-xs-12 contact-info">
+            <div class="row">                             
+              <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8"><div id="map"></div></div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <address class="lawyer-address"><strong class="name"> Address</strong>
+                  <p><span>47 nw 45 ave </span><span>Miami </span><span>FL, </span><span>33126</span></p>
+                </address>
+                <div class="row">
+                  <div class="col-xs-12 item-actions"><a href="" class="col-xs-12"><i aria-hidden="true" class="fa fa-phone"></i><span>(305) 912-9810</span></a><a href="" class="col-xs-12"><i aria-hidden="true" class="fa fa-envelope"></i><span>Email</span></a><a href="" class="col-xs-12"><i aria-hidden="true" class="fa fa-globe"></i><span>WebSite                     </span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row overview-photos-and-videos">
+          <div class="col-xs-12">
+            <h2 class="section-title">Photos and Videos</h2>
+          </div>
+          <div class="col-xs-12 overview-images">
+            <div class="row">
+              <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="/Content/template/images/home/popularcategories/medical_malpractice.jpg" alt=""></a></div>
+              <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="/Content/template/images/home/popularcategories/medical_malpractice.jpg" alt=""></a></div>
+              <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="/Content/template/images/home/popularcategories/medical_malpractice.jpg" alt=""></a></div>
+              <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><img src="/Content/template/images/home/popularcategories/medical_malpractice.jpg" alt=""></a></div>
+            </div>
+          </div>
+          <div class="col-xs-12 overview-videos">
+            <div class="row">
+              <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><i aria-hidden="true" class="fa fa-play play"></i><img src="https://img.youtube.com/vi/zpOULjyy-n8/0.jpg" class="embed-responsive-item"></a></div>
+              <div class="col-xs-6 col-md-3"><a href="#" class="thumbnail"><i aria-hidden="true" class="fa fa-play play"></i><img src="https://img.youtube.com/vi/zpOULjyy-n8/0.jpg" class="embed-responsive-item"></a></div>
             </div>
           </div>
         </div>
@@ -273,8 +439,38 @@
       </div>
     </footer>
     <script src="/src/js/nav.js"></script>
+    <script>
+      <!--function initMap() {
+      //  var uluru = {lat: -25.363, lng: 131.044};
+      //  var map = new google.maps.Map(document.getElementById('map'), {
+      //  zoom: 4,
+       // center: uluru
+       // });
+       // var marker = new google.maps.Marker({
+       // position: uluru,
+       // map: map
+       // });
+      -->
+      <!--}-->
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap"> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js">          </script>
     <script src="/src/components/bootstrap/js/bootstrap.min.js"></script>
     <script src="/src/js/nav.js"></script>
+    <script>
+      <!--function initMap() {
+      //  var uluru = {lat: -25.363, lng: 131.044};
+      //  var map = new google.maps.Map(document.getElementById('map'), {
+      //  zoom: 4,
+       // center: uluru
+       // });
+       // var marker = new google.maps.Marker({
+       // position: uluru,
+       // map: map
+       // });
+      -->
+      <!--}-->
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap"> </script>
   </body>
 </html>

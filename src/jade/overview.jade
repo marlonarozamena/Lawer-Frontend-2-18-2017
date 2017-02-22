@@ -5,21 +5,191 @@ block content
     block nav
         include ./2.includes/navwithoutsearch
     div(class="sections-wrapper")
-        append sections            
-            div(id="member-overview" class="container")
+        append sections    
+            div(class="search-section-container")   
+                div(class="container-fluid")
+                    div(class="row search-section")
+                        div(class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-container")
+                            include ./2.includes/searchform
+            div(class="container member-overview")               
                 div(class="row overview-cover")
-                    div(class="col-xs-12 col-sm-4 col-md-3 col-lg-3 member-img")
-                        img(class="img-responsive" src="/Content/template/images/lawyer/lawyer2img.jpg")
-                    div(class="col-xs-12 col-sm-8 col-md-9 col-lg-9 general-information")
+                    div(class="col-xs-12 col-sm-4 col-md-2 col-lg-2 member-img")
+                        a(class="img-link" href="")
+                            img(class="img-responsive" src="/Content/template/images/lawyer/lawyer2img.jpg")
+                    div(class="col-xs-12 col-sm-8 col-md-10 col-lg-10 general-information")
                         div(class="row")
                             div(class="col-xs-12")
                                 h1(class="member-name") Kathryn Halmilton
                         div(class="row")
                             div(class="col-xs-12")
-                                h3(class="item-name") Kathryn Halmilton
+                                div(class="rating-stars")
+                                    div(class="rating-stars-top" style="width: 0%")
+                                        span ★
+                                        span ★
+                                        span ★
+                                        span ★
+                                        span ★
+                                    div(class="rating-stars-bottom")
+                                        span ★
+                                        span ★
+                                        span ★
+                                        span ★
+                                        span ★
+                                div(class="rating-count")
+                                    a(class="compound-link" href="")
+                                        span 38
+                                        span reviews
+                                        i(class="fa fa-chevron-right" aria-hidden="true")
+                        div(class="row licensed")
+                            div(class="col-xs-12")                                
+                                i(class="fa fa-briefcase" aria-hidden="true")
+                                span(class="item-Licensed-for") Licensed for 18 years   
+                        div(class="row firm")
+                            div(class="col-xs-12")
+                                i(class="fa fa-balance-scale" aria-hidden="true")
+                                span(class="item-firm") The Nydia N Streets Law Firm                                                                     
+                        div(class="row location")
+                            div(class="col-xs-12 ") 
+                                i(class="fa fa-map-marker" aria-hidden="true")
+                                span(class="item-firm-place") Miami, FL      
+                        div(class="row")
+                            div(class="col-xs-12 item-actions")
+                                a(href="" class="col-xs-4")
+                                    i(class="fa fa-phone" aria-hidden="true")
+                                    span (305) 912-9810
+                                a(href="" class="col-xs-4")
+                                    i(class="fa fa-envelope" aria-hidden="true")
+                                    span Email
+                                a(href="" class="col-xs-4")
+                                    i(class="fa fa-globe" aria-hidden="true")
+                                    span WebSite                                    
+                div(class="row overview-practice-areas")
+                    div(class="col-xs-12")
+                        h2(class="section-title") Practice Areas
+                        div(class="practice-area-tags")
+                            span(class="label label-success") Family
+                            span(class="label label-success") Divorce and separation
+                            span(class="label label-success") Child custody
+                            span(class="label label-success") Child support
+                            span(class="label label-success") Domestic violence
+                            span(class="label label-success") Marriage and prenuptials
+                div(class="row overview-about-me")
+                    div(class="col-xs-12")
+                        h2(class="section-title") About me
+                        div(class="about-me-text-container")
+                            p Dedicated to helping clients in family law matters for over 37 years. Top rated "AV Preeminent" for highest level of professional excellence as reviewed by his peers in Martindale-Hubbell®; "Top Rated Lawyer in Family Law for Ethical Standards and Legal Ability" in Martindale-Hubbell®; Highest Rating of 5.0/5.0 in Martindale-Hubbell® Client Review Ratings™; Highest Rating of 10.0 "Superb" on Avvo.Com;  42 endorsements by lawyers in Avvo.com; Rated "Excellent" on LawyerRatingz.com; Rated 5 out of 5 stars on Lawlink; "10 Best Award in Client Satisfaction" (American Institute of Family Law Attorneys); Top 100 Lawyers (The American Society of Legal Advocates); Rated 5 out of 5 stars on Merchantcircle.com; Rated A+ by the Better Business Bureau.
+                        div(class="language-spoken")
+                            h3(class="section-subtitle") Languages: 
+                            p
+                                span Spanish,                                 
+                                span English                
+                div(class="row overview-review")
+                    div(class="col-xs-12")
+                        h2(class="section-title") Reviews
+                        div(class="row")
+                            div(class="col-xs-12 review-actions-container")
+                                div(class="review-actions")
+                                    div(class="make-review")
+                                        a(class="btn btn-primary-inverse  btn-lg" type="button") Make a Review
+                                    div(class="rating-stars")
+                                        div(class="rating-stars-top" style="width: 0%")
+                                            span ★
+                                            span ★
+                                            span ★
+                                            span ★
+                                            span ★
+                                        div(class="rating-stars-bottom")
+                                            span ★
+                                            span ★
+                                            span ★
+                                            span ★
+                                            span ★                                    
+                                    div(class="rating-count")
+                                        a(class="compound-link" href="")
+                                            span 38
+                                            span reviews
+                                            i(class="fa fa-chevron-right" aria-hidden="true")
+                                    
+                            div(class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2 reviews-container")
+                                each _ in Array(5)
+                                    div(class="row review-item")
+                                        div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 user-information")
+                                            span(class="review-user-name user-information-item") Juana Perez
+                                            div(class="rating-stars user-information-item")
+                                                div(class="rating-stars-top" style="width: 0%")
+                                                    span ★
+                                                    span ★
+                                                    span ★
+                                                    span ★
+                                                    span ★
+                                                div(class="rating-stars-bottom")
+                                                    span ★
+                                                    span ★
+                                                    span ★
+                                                    span ★
+                                                    span ★
+                                            span(class="review-time user-information-item") February 29, 2016
+                                        div(class="col-lg-10 col-md-12 col-sm-10 col-xs-12 review-information")
+                                            p(class="review-text") After consulting various lawyers, I met with Mr. Schwartz in early 2012 to discuss my divorce case. From the initial consultation I knew that he was the one lawyer that I could trust to handle my case as if it was his own. He took the time to listen to my case and did not made feel judged at any point in time.
+                                            | Throught out the entire process, Mr. Schwartz was always available day or night even when he was out of town for a family emergency. Despite the complexity of my case (and how difficult my ex behaved thru the entire process) Mr. Schwartz was my sanity clause. His extensive experience in the Family law field allows him to foresee issues and come up with effective solutions.
+                div(class="row overview-contact-info")
+                    div(class="col-xs-12")
+                        h2(class="section-title") Contact info
+                    div(class="col-xs-12 contact-info")
+                        div(class="row")                              
+                            div(class="col-xs-12 col-sm-6 col-md-8 col-lg-8")
+                                <div id="map"></div>
+                            div(class="col-xs-12 col-sm-6 col-md-4 col-lg-4")
+                                address(class="lawyer-address")
+                                    strong(class="name")  Address
+                                    p
+                                        span 47 nw 45 ave 
+                                        span Miami 
+                                        span FL, 
+                                        span 33126
+                                div(class="row")
+                                    div(class="col-xs-12 item-actions")
+                                        a(href="" class="col-xs-12")
+                                            i(class="fa fa-phone" aria-hidden="true")
+                                            span (305) 912-9810
+                                        a(href="" class="col-xs-12")
+                                            i(class="fa fa-envelope" aria-hidden="true")
+                                            span Email
+                                        a(href="" class="col-xs-12")
+                                            i(class="fa fa-globe" aria-hidden="true")
+                                            span WebSite                     
 
-
+                div(class="row overview-photos-and-videos")
+                    div(class="col-xs-12")
+                        h2(class="section-title") Photos and Videos
+                    div(class="col-xs-12 overview-images")
+                        div(class="row")
+                            each _ in Array(4)
+                                div(class="col-xs-6 col-md-3")
+                                    a( href="#" class="thumbnail")
+                                        img(src="/Content/template/images/home/popularcategories/medical_malpractice.jpg" alt="")
+                    div(class="col-xs-12 overview-videos")
+                        div(class="row")
+                            each _ in Array(2)
+                                div(class="col-xs-6 col-md-3")
+                                    a( href="#" class="thumbnail")
+                                        i(class="fa fa-play play" aria-hidden="true")
+                                        img(class="embed-responsive-item" src="https://img.youtube.com/vi/zpOULjyy-n8/0.jpg")
+  
     append footer
         include ./2.includes/footer
     append scripts
         script(src="/src/js/nav.js")
+        script
+            //function initMap() {
+              //  var uluru = {lat: -25.363, lng: 131.044};
+              //  var map = new google.maps.Map(document.getElementById('map'), {
+              //  zoom: 4,
+               // center: uluru
+               // });
+               // var marker = new google.maps.Marker({
+               // position: uluru,
+               // map: map
+               // });
+            //}
+        script(async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap")  

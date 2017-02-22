@@ -9,11 +9,13 @@ block content
     block nav
         include ./2.includes/navwithoutsearch
     div(class="sections-wrapper")
-        append sections            
-            div(id="search-result" class="container")
-                div(class="row search-section")
-                    div(class="col-xs-12 col-sm-8 col-md-8 col-lg-8 form-container")
-                        include ./2.includes/searchform
+        append sections
+            div(class="search-section-container")   
+                div(class="container-fluid")
+                    div(class="row search-section")
+                        div(class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-container")
+                            include ./2.includes/searchform       
+            div(class="container")
                 div(class="row headline")
                     div(class="col-xs-12")
                         h1(class="result-headline")
@@ -27,12 +29,12 @@ block content
                                 each _ in Array(5)
                                     div(class="row result-item")
                                         div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 item-img")
-                                            a(href="")
+                                            a(class="img-link" href="")
                                                 img(class="img-responsive" src="/Content/template/images/lawyer/lawyer2img.jpg")
                                         div(class="col-xs-12 col-sm-10 col-md-10 col-lg-10 item-content")
                                             div(class="row")
                                                 div(class="col-xs-8")
-                                                    h3(class="item-name") 
+                                                    h3(class="item-name")
                                                         a(href="") Kathryn Halmilton
                                                 div(class="col-xs-4")
                                                     span(class="is-sponsored pull-right") sponsored 
@@ -80,7 +82,7 @@ block content
                                 each _ in Array(5)
                                     div(class="row result-item")
                                         div(class="col-xs-12 col-sm-2 col-md-2 col-lg-2 item-img")
-                                            a(href="")
+                                            a(class="img-link" href="")
                                                 img(class="img-responsive" src="/Content/template/images/lawyer/lawyer1img.jpg")
                                         div(class="col-xs-12 col-sm-10 col-md-10 col-lg-10 item-content")
                                             div(class="row")
