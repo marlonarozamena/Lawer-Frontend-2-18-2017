@@ -1,0 +1,209 @@
+@import "overview.scss";
+@media (min-width: 768px) {
+      h1{
+        margin: 0 0 4px 0;
+        font-size: 2.5em;
+        font-family: "SourceSansPro-semibold";
+    }
+    $input-height: 40px;
+     .search-section{
+        padding: 0 0 10px 0;
+        .form-container{
+            background-color: #eeeeee;
+            text-align: center
+        }
+        .form-inline{
+                display: inline-block;
+            .form-group:last-child{
+                margin-bottom: 0;
+            }
+            padding: 12px 0;                    
+            
+            .search-criteria{            
+                width: 460px!important;
+                height: $input-height;
+                border-radius: 0!important;                
+            }
+            .search-where{
+                width: 100%;
+                height: $input-height;
+            }
+            .input-group-btn button {
+                height: $input-height;
+                i{
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+    }
+    .section-title{              
+        font-family: "SourceSansPro-semibold";
+        font-size: 2em!important;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 20px;
+    }
+    .section-subtitle{
+        font-family: "SourceSansPro-semibold";
+        font-size: 1.3em!important;
+        padding-bottom: 5px;       
+    }
+    
+    .review-item{
+        padding: 20px 0;
+        .user-information-item{
+            display: block;
+        }
+        .review-user-name{
+            font-family: "SourceSansPro-semibold";
+            font-size: 1.2em;
+        }
+    }
+    .item-Licensed-for{
+        margin-top:3px!important;
+        display:inline-block!important;
+    }
+    .compound-link{
+        text-decoration: none!important;
+        span, i{
+            margin-right: 3px;
+        }
+        i{
+            font-size: .8em!important;
+        }
+    }
+    .item-actions{
+            margin-top: 10px;
+            i{
+                font-size: 1.3em;
+            }
+
+            a{
+                 color: $result-item-link-color;
+                 padding: 0;
+                 span{
+                     margin-left: 4px;
+                     font-size: 1.2em;
+                 }
+            }
+           
+    }
+    .rating-stars{
+        display: inline-block;
+        color: #ddd;
+        font-size: 1.5em;
+        .rating-stars-top{
+            color: #d9a11a;
+            padding: 0;
+            position: absolute;
+            z-index: 1;
+            display: block;
+            left: 0px !important;
+            overflow: hidden;
+        }
+        .rating-stars-bottom{
+              z-index: 0;
+        }
+    }
+    .rating-count{
+        display: inline-block;
+        span{
+            margin-left: 2px;
+        }
+    }    
+    .member-overview{
+        margin-top: 15px;
+        .member-img{
+            .img-link{
+                display: block;
+                position: relative;
+                width: 100%;
+                min-height: 160px;
+                max-height: 180px;
+                overflow: hidden;
+                img{
+                    display: block;
+                    position: absolute;
+                    margin: auto;
+                    width: auto;
+                    height: auto;                    
+                }
+            }
+        }
+        .general-information{
+            .item-actions, .licensed, .firm,  .location{
+                margin-top: 5px;
+            }
+            .licensed, .firm,  .location{
+                
+                i{
+                    display: inline-block;
+                    margin-right: 4px;
+                    color: #ed9b40;
+                    font-size:1em;
+                }
+
+            }
+            
+        }
+        .overview-practice-areas{
+            padding: 10px 0;
+            
+            .practice-area-tags{
+                .label{
+                    display: inline-block;
+                    padding: .2em .6em .3em;
+                    font-size: 1em;                    
+                    font-family: "SourceSansPro-light";
+                    line-height: 1;
+                    color: #fff;
+                    text-align: center;
+                    white-space: nowrap;
+                    vertical-align: baseline;
+                    border-radius: 0!important;
+                    margin-right: 1px;
+                } 
+
+            }
+            
+        }
+        .overview-review{
+           
+            .review-actions-container{
+                text-align: center;
+                margin-bottom: 20px;
+                .review-actions{
+                    display: inline;
+                    margin: 0 auto;
+                    .make-review{
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                }
+            }          
+                   
+        }
+        .contact-info{
+            .item-actions{
+                a{
+                    padding: 5px 0;
+                }
+            }
+        }
+        .overview-videos{
+            .thumbnail{
+                .play{
+                    color: #ffffff!important;
+                    font-size: 3em;
+                    position: absolute;
+                    left: 45%;
+                    top: 35%;
+                }
+              
+            }
+
+        }
+
+    }
+}

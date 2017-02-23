@@ -1,0 +1,118 @@
+@import "claim.scss";
+@media (min-width: 992px) {
+    $input-height: 40px;
+body{
+     font-family: "SourceSansPro-Semibold";
+}
+    h3{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .search-section{
+        padding: 0 0 10px 0;
+        .form-container{
+            background-color: #eeeeee;
+            text-align: center
+        }
+        .form-inline{
+                display: inline-block;
+            .form-group:last-child{
+                margin-bottom: 0;
+            }
+            padding: 12px 0;                    
+            
+            .search-criteria{            
+                width: 560px!important;
+                height: $input-height;
+                border-radius: 0!important;                
+            }
+            .search-where{
+                width: 100%;
+                height: $input-height;
+            }
+            .input-group-btn button {
+                height: $input-height;
+                i{
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+    }
+    .result-headline{
+        font-size: 2em;
+        .badge{
+            margin-left: 5px;            
+        }
+    }  
+    .result-item{
+        border-top: 1px solid $result-item-border-color;
+        padding: 10px 0;
+        .label {
+            display: inline-block;
+            padding: .2em .6em .3em;
+            font-size: 1em;
+            font-family: "SourceSansPro-semibold";
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0 !important;
+           
+        }
+         .licensed, .firm,  .location{
+                margin-top: 5px;
+            }
+            .location{
+                margin-bottom: 5px;
+            }
+            .licensed, .firm,  .location{
+                
+                i{
+                    display: inline-block;
+                    margin-right: 4px;
+                    color: #ed9b40;
+                    font-size:1em;
+                }
+
+            }
+
+        .item-img{
+            .img-link{
+                display: block;
+                position: relative;
+                width: 100%;
+                min-height: 140px;
+                max-height: 180px;
+                overflow: hidden;
+                img{
+                    display: block;
+                    position: absolute;
+                    margin: auto;
+                    width: auto;
+                    height: auto;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+        .item-name{
+            a{
+               font-family: "SourceSansPro-semibold";
+                text-decoration: none;
+                font-size: .9em;
+                color: $result-item-name-color;
+            }
+        }
+        .is-sponsored{
+            color: $result-item-alternative-color;
+        }
+        .item-firm-place{
+            font-weight: 600;
+        }      
+
+    }
+}

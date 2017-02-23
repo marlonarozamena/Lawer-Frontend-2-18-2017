@@ -1,5 +1,8 @@
 extend ./1.base/base.jade
 append stylesheet    
+    link(href="/src/css/4.overview/overviewmovile.css", rel="stylesheet", media="screen and (min-width: 0px) and (max-width: 767px)")    
+    link(href="/src/css/4.overview/overviewsm.css", rel="stylesheet", media="screen and (min-width: 768px) and (max-width: 991px)")
+    link(href="/src/css/4.overview/overviewmd.css", rel="stylesheet", media="screen and (min-width: 992px) and (max-width: 1199px)")
     link(href="/src/css/4.overview/overviewlg.css", rel="stylesheet", media="screen and (min-width: 1200px)")
 block content
     block nav
@@ -13,10 +16,10 @@ block content
                             include ./2.includes/searchform
             div(class="container member-overview")               
                 div(class="row overview-cover")
-                    div(class="col-xs-12 col-sm-4 col-md-2 col-lg-2 member-img")
+                    div(class="col-xs-3 col-sm-3 col-md-2 col-lg-2 member-img")
                         a(class="img-link" href="")
                             img(class="img-responsive" src="/Content/template/images/lawyer/lawyer2img.jpg")
-                    div(class="col-xs-12 col-sm-8 col-md-10 col-lg-10 general-information")
+                    div(class="col-xs-9 col-sm-9 col-md-10 col-lg-10 general-information")
                         div(class="row")
                             div(class="col-xs-12")
                                 h1(class="member-name") Kathryn Halmilton
@@ -52,7 +55,7 @@ block content
                             div(class="col-xs-12 ") 
                                 i(class="fa fa-map-marker" aria-hidden="true")
                                 span(class="item-firm-place") Miami, FL      
-                        div(class="row")
+                        div(class="row hidden-xs show-sm show-md show-lg")
                             div(class="col-xs-12 item-actions")
                                 a(href="" class="col-xs-4")
                                     i(class="fa fa-phone" aria-hidden="true")
@@ -62,7 +65,19 @@ block content
                                     span Email
                                 a(href="" class="col-xs-4")
                                     i(class="fa fa-globe" aria-hidden="true")
-                                    span WebSite                                    
+                                    span WebSite 
+                    div(class="col-xs-12 show-xs hidden-sm hidden-md hidden-lg")  
+                         div(class="row")
+                            div(class="col-xs-12 item-actions")
+                                a(href="" class="col-xs-6")
+                                    i(class="fa fa-phone" aria-hidden="true")
+                                    span (305) 912-9810
+                                a(href="" class="col-xs-3")
+                                    i(class="fa fa-envelope" aria-hidden="true")
+                                    span Email
+                                a(href="" class="col-xs-3")
+                                    i(class="fa fa-globe" aria-hidden="true")
+                                    span WebSite                                  
                 div(class="row overview-practice-areas")
                     div(class="col-xs-12")
                         h2(class="section-title") Practice Areas

@@ -1,0 +1,215 @@
+<div class="container">
+
+
+
+
+<div id="plans-list" class="row margin-bottom-40 pricing-table-v1 pricing-light">
+
+        <div id="Basic" class="col-md-4  col-sm-12  col-xs-12 animated slideInDown">
+            <div class="pricing hover-effect pricing-v1 ">
+
+
+
+                <div class="pricing-top-image">
+                    <div class="circle-price-image-top">
+
+                    </div>
+                </div>
+
+                <div class="text-center">
+                        <h3 class="title-plan-offer" style="visibility:hidden"> . </h3>
+                </div>
+
+                <div class="pricing-head">
+                    <h3>Basic</h3>
+                </div>
+
+                <ul class="pricing-content list-unstyled">
+                                        <li>EDIT PROFILE</li>
+                                        <li>UPLOAD PHOTO</li>
+                                        <li>ANSWER OPINIONS</li>
+                                        <li>1 CATEGORY</li>
+                                    <li class="visibilityhidden"> - </li>
+                                    <li class="visibilityhidden"> - </li>
+                                    <li class="visibilityhidden"> - </li>
+                                    <li class="visibilityhidden"> - </li>
+                                    <li class="visibilityhidden"> - </li>
+
+                </ul>
+
+                <div class="pricing-footer">
+                        <h4><i>$</i>0.00 <span>Monthly</span></h4>
+                            <a class="btn-u-xs">Free</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="Pro" class="col-md-4  col-sm-12  col-xs-12 animated slideInDown">
+            <div class="pricing hover-effect pricing-v1 ">
+
+                    <div class="sticker-left">Popular</div>
+
+
+                <div class="pricing-top-image">
+                    <div class="circle-price-image-top">
+
+                    </div>
+                </div>
+
+                <div class="text-center">
+                            <h3 class="title-plan-offer">NOW 6 MONTHS FREE</h3>
+                </div>
+
+                <div class="pricing-head">
+                    <h3>Pro</h3>
+                </div>
+
+                <ul class="pricing-content list-unstyled">
+                                        <li>EDIT PROFILE</li>
+                                        <li>UPLOAD PHOTO</li>
+                                        <li>ANSWER OPINIONS</li>
+                                        <li>3 CATEGORIES</li>
+                                        <li>ADS</li>
+                                        <li>PUBLISH OFFERS</li>
+                                        <li>REMOVE ADS FROM OTHER EXPERTS</li>
+                                    <li class="visibilityhidden"> - </li>
+                                    <li class="visibilityhidden"> - </li>
+
+                </ul>
+
+                <div class="pricing-footer">
+                        <h4><i>$</i>29.99 <span>Monthly</span></h4>
+                            <a href="/plan/2/get" class="btn-u btn-brd-hover btn-u-default btn-u-xs"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="Elite" class="col-md-4  col-sm-12  col-xs-12 animated slideInDown">
+            <div class="pricing hover-effect pricing-v1 ">
+
+
+
+                <div class="pricing-top-image">
+                    <div class="circle-price-image-top">
+
+                    </div>
+                </div>
+
+                <div class="text-center">
+                            <h3 class="title-plan-offer">BUY 6 MONTHS GET 6 FREE</h3>
+                </div>
+
+                <div class="pricing-head">
+                    <h3>Elite</h3>
+                </div>
+
+                <ul class="pricing-content list-unstyled">
+                                        <li>EDIT PROFILE</li>
+                                        <li>UPLOAD PHOTO</li>
+                                        <li>ANSWER OPINIONS</li>
+                                        <li>UNLIMITED CATEGORIES</li>
+                                        <li>2 x ADS</li>
+                                        <li>PUBLISH OFFERS</li>
+                                        <li>REMOVE ADS FROM OTHER EXPERTS</li>
+                                        <li>BUY ELITE ADS</li>
+                                        <li>PERSONAL AGENT</li>
+
+                </ul>
+
+                <div class="pricing-footer">
+                        <h4><i>$</i>44.99 <span>Monthly</span></h4>
+                            <a href="/plan/3/get" class="btn-u btn-brd-hover btn-u-default btn-u-xs"><i class="fa fa-shopping-cart"></i> Purchase Now</a>
+                </div>
+
+
+            </div>
+        </div>
+
+</div>
+</div>
+
+.plans-wrapper{
+        text-transform: uppercase;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    #basic, #Pro, #Elite{
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 0;
+        .pricing {
+            background-color: #fff;
+        }
+    }
+    #basic{
+        .pricing-top-image {
+            text-align: center;
+            .circle-price-image-top{
+                background-image: url(../../Content/template/images/plans/basic.png);
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+        }
+    }
+    #Elite{
+        .pricing {  
+            .pricing-head {
+                background-color: #fff;
+            }
+            .pricing-content li {
+                border-bottom: solid 1px #ddd;
+            }
+        }
+    }
+    
+    .pricing {   
+        border-radius: 3px;  
+        h3, h4{
+            margin: 0;
+            line-height: normal;
+            font-weight: 500;
+            font-size: 1.5;
+        }
+        .pricing-head{
+            text-align: center;
+
+        }
+        .pricing-content{
+            padding-left: 0;
+            list-style: none;
+            margin: 0;
+            li {
+                font-size: 18px;
+                padding: 8px;
+                width: 80%;
+                margin: 0 auto;
+                font-family: 'Source Sans Pro',sans-serif;
+                font-weight: 500;
+            }
+        }
+    }
+    
+    
+    .pricing-light{
+        .pricing {          
+            box-shadow: none;
+            border: 1px solid #ddd;
+        }
+        li {
+            color: #424242;
+            text-align: center;
+        }
+    }
+    .pricing-table-v1{
+        .pricing-v1 {
+            -webkit-transition: all 300ms;
+            -moz-transition: all 300ms;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+        }
+    } 
+    

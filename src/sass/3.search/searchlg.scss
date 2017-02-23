@@ -71,6 +71,12 @@ body{
     .result-item{
         border-top: 1px solid $result-item-border-color;
         padding: 10px 0;
+        .item-content{           
+            .item-Licensed-for, .is-sponsored{
+                text-align: right!important;
+                display: block;
+            }            
+        }
         .item-practice-area{
             margin: 7px 0;
         }
@@ -120,8 +126,6 @@ body{
             }
            
         }
-        
-       
 
     }
 

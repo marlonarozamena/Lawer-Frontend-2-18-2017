@@ -1,0 +1,37 @@
+@import "plans.scss";
+@media (min-width: 1200px) {
+    .plan-body{
+        .panel-top-image{
+            
+        }
+    }
+    .basic{
+        .plan-body{
+            .panel-top-image{
+                background-image: url(../../../Content/template/images/plans/basic.png);
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+        }
+    }
+    .pro{
+        .plan-body{
+            .panel-top-image{
+                background-image: url(../../../Content/template/images/plans/pro.png);
+                background-repeat: no-repeat;
+                background-position: 50%;
+                height: 50px; //ponerle un height
+            }
+        }
+    }
+    .elite{
+        .plan-body{
+            .panel-top-image{
+                background-image: url(../../../Content/template/images/plans/elite.png);
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+        }
+    }
+    
+}

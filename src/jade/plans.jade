@@ -1,0 +1,73 @@
+extend ./1.base/base.jade
+append stylesheet
+    link(href="/src/css/6.plans/plansmovil.css", rel="stylesheet", media="screen and (min-width: 0px) and (max-width: 519px)")
+    link(href="/src/css/6.plans/planstablet.css", rel="stylesheet", media="screen and (min-width: 520px) and (max-width: 767px)")
+    link(href="/src/css/6.plans/planssm.css", rel="stylesheet", media="screen and (min-width: 768px) and (max-width: 991px)")
+    link(href="/src/css/6.plans/plansmd.css", rel="stylesheet", media="screen and (min-width: 992px) and (max-width: 1199px)")
+    link(href="/src/css/6.plans/planslg.css", rel="stylesheet", media="screen and (min-width: 1200px)")
+block content
+    block nav
+        include ./2.includes/navwithoutsearch
+    div(class="sections-wrapper")
+        append sections
+            div(class="container")
+                div(class="row plans-wrapper")
+                    div(id="basic" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 basic")
+                        div(class="plan-body")
+                            div(class="panel-top")
+                                div(class="panel-top-image")
+                            div(class="plan-offer")
+                                h3(class="title-plan-offer") BUY 6 MONTHS GET 6 FREE
+                            div(class="plan-name")
+                                h3 Elite
+                            ul(class="plan-item-list")
+                                each _ in Array(5)
+                                    li Show Contact Info
+                            div(class="plan-footer")
+                                h4
+                                    i|$
+                                    |0.00
+                                    span Monthly
+                                a(class="btn-u-xs") Free
+                    div(id="pro" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pro")
+                        div(class="plan-body")
+                            div(class="panel-top")
+                                div(class="panel-top-image")
+                            div(class="plan-offer")
+                                h3(class="title-plan-offer") BUY 6 MONTHS GET 6 FREE
+                            div(class="plan-name")
+                                h3 Elite
+                            ul(class="plan-item-list")
+                                each _ in Array(5)
+                                    li Show Contact Info
+                            div(class="plan-footer")
+                                h4
+                                    i|$
+                                    |0.00
+                                    span Monthly
+                                a(class="btn-u btn-brd-hover btn-u-default btn-u-xs") 
+                                    i(class="fa fa-shopping-cart")
+                                    | Purchase Now
+                    div(id="Elite" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 elite")
+                         div(class="plan-body")
+                            div(class="panel-top-image")
+                                div(class="circle-price-image-top")
+                            div(class="plan-offer")
+                                h3(class="title-plan-offer") BUY 6 MONTHS GET 6 FREE
+                            div(class="plan-name")
+                                h3 Elite
+                            ul(class="plan-item-list")
+                                each _ in Array(5)
+                                    li Show Contact Info
+                            div(class="plan-footer")
+                                h4
+                                    i|$
+                                    |0.00
+                                    span Monthly
+                                a(class="btn-u btn-brd-hover btn-u-default btn-u-xs") 
+                                    i(class="fa fa-shopping-cart")
+                                    | Purchase Now
+    append footer
+        include ./2.includes/footer
+    append scripts
+        script(src="/src/js/nav.js")

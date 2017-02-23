@@ -4,7 +4,7 @@ index.html
 node_modules
 bower_components
 .node
-assets/css/*
-assets/maps/*
+src/css/*
+maps/*
 *.orig
 .idea
